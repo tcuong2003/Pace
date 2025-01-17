@@ -1,0 +1,3824 @@
+{% extends 'base.html' %} 
+{% block title %} Tuyen dung {% endblock %} 
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      rel="stylesheet"
+    />
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    -->
+    <link
+      href="https://www.pace.edu.vn/images/favicon.jpg"
+      rel="shortcut icon"
+    />
+    <meta
+      name="csrf-token"
+      content="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+    />
+
+    <title>Dự tuyển vào PACE</title>
+    <meta
+      name="description"
+      content="Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+    />
+    <link rel="canonical" href="https://consulting.pace.edu.vn/ung-tuyen" />
+    <meta name="robots" content="all" />
+    <meta property="og:title" content="Dự tuyển vào PACE" />
+    <meta
+      property="og:description"
+      content="Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://consulting.pace.edu.vn/ung-tuyen"
+    />
+    <meta
+      property="og:image"
+      content="https://consulting.pace.edu.vn/img/pace-institute.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="Dự tuyển vào PACE" />
+    <meta
+      name="twitter:description"
+      content="Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Dự tuyển vào PACE",
+        "description": "Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+      }
+    </script>
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="fb:app_id" content="1692611384370875" />
+    <meta
+      name="google-site-verification"
+      content="ZQAl9-ieYEY8imqZusYaIBZ3GBeClKl4bwOmn5aO8oA"
+    />
+    <meta name="geo.region" content="VN" />
+    <meta name="geo.placename" content="Ho Chi Minh" />
+    <meta name="geo.position" content="10.761453; 106.686157" />
+    <meta name="ICBM" content="10.761453, 106.686157" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Học viện Quản lý PACE",
+        "alternateName": "PACE",
+        "url": "https://www.pace.edu.vn"
+      }
+    </script>
+    <!-- Schema Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Học Viện Quản Lý PACE",
+        "image": "https://www.pace.edu.vn/uploads/banners/gioi-thieu-hoc-vien-quan-ly-pace.jpg",
+        "@id": "",
+        "url": "https://www.pace.edu.vn",
+        "telephone": "+8428 38370208",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "341 Nguyễn Trãi, Quận 1",
+          "addressLocality": "Hồ Chí Minh",
+          "postalCode": "70000",
+          "addressCountry": "VN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.761453,
+          "longitude": 106.686157
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "21:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/HocvienQuanlyPACE",
+          "https://www.linkedin.com/company/pace-institute-of-management/",
+          "https://www.youtube.com/c/H%E1%BB%8DcVi%E1%BB%87nQu%E1%BA%A3nL%C3%BDPACE"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Học Viện Quản Lý PACE",
+        "alternateName": "PACE Institute of Management",
+        "url": "https://www.pace.edu.vn/",
+        "logo": "https://www.pace.edu.vn/img/logo-pace-2021.svg",
+        "sameAs": [
+          "https://www.facebook.com/HocvienQuanlyPACE",
+          "https://www.linkedin.com/company/pace-institute-of-management/",
+          "https://www.youtube.com/c/H%E1%BB%8DcVi%E1%BB%87nQu%E1%BA%A3nL%C3%BDPACE"
+        ]
+      }
+    </script>
+    <link rel="alternate" href="https://www.pace.edu.vn/" hreflang="vi-vn" />
+    <link rel="alternate" href="https://www.pace.edu.vn/home" hreflang="en" />
+    <link
+      rel="alternate"
+      href="https://www.pace.edu.vn/"
+      hreflang="x-default"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Choices CSS -->
+    <link
+      rel="stylesheet"
+      href="/js/plugins/choices/css/choices.min.css?id=5c65c469543e1c2dfb0046db039d2ae2"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      href="https://www.pace.edu.vn/js/plugins/owl/assets/owl.carousel.min.css"
+      rel="stylesheet"
+      media="screen"
+    />
+
+    <style rel="stylesheet">
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev {
+        border: none;
+        padding: 0 !important;
+        position: absolute;
+        bottom: 0;
+        background: 0 0;
+        color: inherit;
+        font: inherit;
+        height: 47px;
+        width: 26px;
+        cursor: pointer;
+        top: 50px !important;
+      }
+
+      .owl-carousel .owl-prev {
+        left: -53px;
+      }
+
+      .owl-carousel .owl-next {
+        right: -43px;
+      }
+
+      .owl-carousel .owl-nav button.owl-next span,
+      .owl-carousel .owl-nav button.owl-prev span {
+        font-size: 4rem;
+        color: #8c8c8c;
+      }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="/css/app.css?id=e1aba339773a612355fc97b2e9f56361"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      href="/css/web.css?id=ec2065443cc2874e00d8da29217867b9"
+      rel="stylesheet"
+      media="screen"
+    />
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js?id=8fb8fee4fcc3cc86ff6c724154c49c42"></script>
+    <script>
+      $.ajaxSetup({
+        headers: {
+          "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+        },
+      });
+
+      let uri = window.location.href
+        .replace("https://", "")
+        .replace("http://", "")
+        .replace(window.location.host, "")
+        .replace(window.location.hash, "");
+
+      if (
+        (uri == "/dao-tao" || uri == "dao-tao") &&
+        window.location.hash.replace("#", "").startsWith("truong-")
+      ) {
+        window.location.href =
+          "https://" +
+          window.location.host +
+          "/" +
+          window.location.hash.replace("#", "");
+      }
+    </script>
+
+    <!-- EXTRA CSS -->
+    <style rel="stylesheet">
+      .section-title {
+        font-size: 30px !important;
+      }
+
+      .recruitment-content {
+        font-size: 16px;
+        line-height: 19px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .recruitment-content h5 {
+        font-size: 20px;
+        line-height: 28px;
+        color: #013957;
+        font-weight: 700;
+      }
+
+      p {
+        line-height: 18px !important;
+      }
+
+      .highlight-box {
+        background-color: #f5fcff;
+        border: solid 1px #a1e6ff;
+      }
+
+      .highlight-box p:last-child {
+        margin-bottom: 0 !important;
+      }
+
+      .uploader-container {
+        padding: 0.5rem;
+        text-align: center;
+        border-style: dashed !important;
+        border-color: #ced4da !important;
+      }
+
+      .uploader-container:hover,
+      .uploader-container:active {
+        border-color: #86b7fe !important;
+        cursor: pointer;
+      }
+
+      .uploader-container input[type="file"] {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+      }
+    </style>
+    <!-- End EXTRA CSS -->
+
+    <link
+      href="/css/responsive.css?id=4e1803052f5e63be23dce0c644419c3e"
+      rel="stylesheet"
+      media="screen"
+    />
+  </head>
+  <body class="web-recruitments-index">
+    <!-- BANNER -->
+    <section id="banner">
+      <div
+        class="bg-img"
+        style="
+          background-image: url('https://www.pace.edu.vn/uploads/banners/tuyen-dung.jpg');
+        "
+      >
+        <div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#" title="Ứng tuyển vào PACE" target="_blank">
+                <img
+                  src="https://www.pace.edu.vn/uploads/banners/tuyen-dung.jpg"
+                  alt="Ứng tuyển vào PACE"
+                  class="d-block w-100"
+                  style="aspect-ratio: 4.27/1"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // BANNER -->
+
+    <!-- MAIN CONTENT -->
+    <section id="content" class="bg-white pt-5 pb-5">
+      <div class="container">
+        <!-- BREADCRUMB -->
+        <div class="mt-4">
+          <ul class="breadcrumb pb-4 mb-0 border-bottom border-dark">
+            <li class="breadcrumb-item">
+              <a href="https://consulting.pace.edu.vn/trang-chu">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Dự tuyển vào PACE
+            </li>
+          </ul>
+        </div>
+        <!-- // BREADCRUMB -->
+
+        <!-- HIGHLIGHT -->
+        <div class="highlight-box p-5 mt-4">
+          <p>
+            <span class="fw-bold text-pace-blue"
+              >PACE Institute of Management</span
+            >
+            là học viện quản lý có ảnh hưởng sâu rộng tại Việt Nam, tiên phong
+            trong việc giúp các doanh nghiệp nâng tầm quản trị và vươn tầm quốc
+            tế. Tiền thân của Học viện Quản lý PACE là Trường Doanh Nhân PACE -
+            “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam, một
+            ngôi trường đặc biệt của doanh giới.
+          </p>
+
+          <p>
+            <span class="fw-bold text-pace-blue"
+              >Hệ sinh thái Quản trị Toàn cầu của PACE</span
+            >
+            gồm 8 Trường trực thuộc, 8 đơn vị thành viên và 9 Đối tác toàn cầu,
+            PACE đang tìm kiếm và tuyển dụng các nhân sự phù hợp để bổ sung vào
+            đội ngũ nhằm triển khai mạnh mẽ các chiến lược phát triển đột phá
+            của PACE trong giai đoạn mới.
+          </p>
+        </div>
+        <!-- // HIGHLIGHT -->
+
+        <!-- JOB LIST -->
+        <div class="mt-5">
+          <h3 class="section-title mb-4 text-pace-blue">
+            Những vị trí đang mở tuyển
+          </h3>
+
+          <div
+            class="bg-pace-dark-yellow mb-4"
+            style="height: 10px; width: 80px"
+          ></div>
+
+          <div class="accordion accordion-flush" id="recruitmentList">
+            <div class="accordion-item recruitment-item pt-1">
+              <div
+                class="d-md-flex gap-3 justify-content-between align-items-md-start pt-4 pb-4 pb-md-0"
+                id="recruitmentItem21"
+              >
+                <div class="text" style="font-size: 16px">
+                  <p class="text-pace-light-blue job-title mb-1 mb-md-3">
+                    SENIOR CREATIVE EXECUTIVE (CHUYÊN VIÊN THIẾT KẾ)
+                  </p>
+                  <p class="mb-1 mb-md-3">Hình thức làm việc: Toàn thời gian</p>
+                  <p class="mb-1 mb-md-3">Nơi làm việc: TP.HCM</p>
+                </div>
+                <button
+                  class="btn btn-outline-pace-light-blue"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recruitmentItemContent21"
+                  aria-expanded="false"
+                  aria-controls="recruitmentItemContent21"
+                >
+                  Xem chi tiết
+                </button>
+              </div>
+              <div
+                id="recruitmentItemContent21"
+                class="accordion-collapse collapse"
+                aria-labelledby="recruitmentItem21"
+                data-bs-parent="#recruitmentList"
+              >
+                <div
+                  class="accordion-body bg-pace-body-background p-4 pe-5 position-relative"
+                >
+                  <button
+                    type="button"
+                    class="btn-close position-absolute me-3 mt-3"
+                    style="right: 0; top: 0"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#recruitmentItemContent21"
+                    aria-expanded="true"
+                    aria-controls="recruitmentItemContent21"
+                  ></button>
+                  <div class="recruitment-content">
+                    <h5>Mô tả công việc</h5>
+                    <ul>
+                      <li>
+                        L&ecirc;n &yacute; tưởng v&agrave; triển khai thiết kế
+                        c&aacute;c sản phẩm truyền th&ocirc;ng (banner, poster,
+                        infographic, digital ads, etc.) v&agrave; c&aacute;c ấn
+                        phẩm truyền th&ocirc;ng (brochure, leaflet, voucher,
+                        etc.) ph&ugrave; hợp với bộ nhận diện thương hiệu.
+                      </li>
+                      <li>
+                        Bi&ecirc;n tập v&agrave; chỉnh sửa video (social media
+                        video, ads video, corporate video) đảm bảo chất lượng
+                        cao v&agrave; thu h&uacute;t với kh&aacute;n giả mục
+                        ti&ecirc;u.
+                      </li>
+                      <li>
+                        Hỗ trợ c&aacute;c c&ocirc;ng t&aacute;c quay phim, chụp
+                        ảnh phục vụ cho c&aacute;c hội thảo, sự kiện.
+                      </li>
+                      <li>
+                        Quản l&yacute; v&agrave; tối ưu h&oacute;a c&aacute;c
+                        t&agrave;i nguy&ecirc;n truyền th&ocirc;ng (h&igrave;nh
+                        ảnh, video, file thiết kế) để đảm bảo hiệu quả sử dụng
+                        l&acirc;u d&agrave;i.
+                      </li>
+                      <li>
+                        Nghi&ecirc;n cứu xu hướng thiết kế v&agrave; truyền
+                        th&ocirc;ng để &aacute;p dụng v&agrave;o c&ocirc;ng
+                        việc, gi&uacute;p thương hiệu nổi bật v&agrave; bắt kịp
+                        xu hướng
+                      </li>
+                    </ul>
+
+                    <h5>Yêu cầu dự tuyển</h5>
+                    <ul>
+                      <li>
+                        Tối thiểu 2 năm kinh nghiệm l&agrave;m việc trong lĩnh
+                        vực thiết kế/ bi&ecirc;n tập video (Ứng vi&ecirc;n
+                        c&oacute; thể c&oacute; thế mạnh v&agrave; kinh nghiệm
+                        nổi trội ở 1 trong 2 lĩnh vực v&agrave; c&oacute; kỹ
+                        năng cơ bản về lĩnh vực c&ograve;n lại).
+                      </li>
+                      <li>
+                        Th&agrave;nh thạo c&aacute;c phần mềm thiết kế v&agrave;
+                        bi&ecirc;n tập video chuy&ecirc;n dụng (Ứng vi&ecirc;n
+                        th&agrave;nh thạo c&aacute;c phần mềm bi&ecirc;n tập
+                        short content như CapCut, Tiktok,... l&agrave; một lợi
+                        thế).
+                      </li>
+                      <li>
+                        C&oacute; khả năng s&aacute;ng tạo v&agrave; thẩm mỹ
+                        tốt.
+                      </li>
+                      <li>
+                        Am hiểu c&aacute;c xu hướng s&aacute;ng tạo tr&ecirc;n
+                        nhiều nền tảng truyền th&ocirc;ng kh&aacute;c nhau.
+                      </li>
+                      <li>
+                        Kỹ năng giao tiếp v&agrave; giải quyết vấn đề tốt.
+                      </li>
+                      <li>
+                        Ứng vi&ecirc;n đ&iacute;nh k&egrave;m portfolio khi ứng
+                        tuyển.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applicationForm21"
+                    class="btn btn-pace-lighter-blue w-100"
+                  >
+                    Gửi hồ sơ dự tuyển
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLICATION FORM -->
+            <div
+              class="modal fade"
+              id="applicationForm21"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="applicationFormLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                  <form
+                    id="applicationForm"
+                    action="https://consulting.pace.edu.vn/ung-tuyen/21"
+                    class="needs-validation"
+                    enctype="multipart/form-data"
+                    method="post"
+                    novalidate
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+                    />
+                    <input type="hidden" name="job" value="21" />
+                    <div
+                      class="modal-header rounded-0"
+                      style="
+                        background-color: #f5fcff;
+                        border: solid 1px #a1e6ff;
+                      "
+                    >
+                      <h5
+                        class="modal-title text-center w-100"
+                        id="applicationFormLabel"
+                        style="line-height: 1.2"
+                      >
+                        Vị trí ứng tuyển<br />
+                        <strong
+                          >SENIOR CREATIVE EXECUTIVE<br />(CHUYÊN VIÊN THIẾT
+                          KẾ)</strong
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Đóng"
+                      ></button>
+                    </div>
+                    <div class="modal-body px-5">
+                      <p class="text-danger fst-italic" style="font-size: 12px">
+                        Lưu ý: (*) là những thông tin cần điền
+                      </p>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Họ và tên <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <input
+                            type="text"
+                            name="full_name"
+                            value=""
+                            class="form-control text-capitalize"
+                            placeholder="Họ tên đầy đủ"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            <i class="fas fa-info-circle"></i> Vui lòng nhập dữ
+                            liệu
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Danh xưng <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="0"
+                              id="gender0"
+                              name="gender"
+                              checked
+                            />
+                            <label class="form-check-label" for="gender0"
+                              >Chị</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="1"
+                              id="gender1"
+                              name="gender"
+                            />
+                            <label class="form-check-label" for="gender1"
+                              >Anh</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >E-mail <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            value=""
+                            email
+                            class="form-control"
+                            placeholder="E-mail đăng ký"
+                            required
+                          />
+                          <div class="email_valid text-danger"></div>
+                          <div class="invalid-feedback" for="email">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            E-mail.
+                          </div>
+                          <!-- <div class="invalid-feedback">
+                                <i class="fas fa-info-circle"></i> Vui lòng nhập dữ liệu                            </div> -->
+                        </div>
+                        <label class="col-md-2 text-end"
+                          >ĐTDĐ <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            id="mobile"
+                            name="mobile"
+                            value=""
+                            phone
+                            class="form-control"
+                            placeholder="Điện thoại di động"
+                            required
+                          />
+                          <div class="mobile_valid text-danger"></div>
+                          <div class="invalid-feedback" for="mobile">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            ĐTDĐ.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >CV <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="uploader-container p-2 border rounded">
+                            <div class="fileBrowser w-100 h-100">
+                              <div class="label">Attach your CV</div>
+                              <div
+                                class="info fst-italic"
+                                style="color: #cacaca"
+                              >
+                                Click to select & upload your CV
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              id="cvFileInput"
+                              name="cv_file"
+                              accept="application/pdf"
+                              aria-describedby="cvFileInput"
+                              aria-label="Upload"
+                            />
+                          </div>
+                          <div
+                            class="text-danger fst-italic mt-2"
+                            style="font-size: 12px"
+                          >
+                            Lưu ý: Chấp nhận file PDF, dung lượng không quá 4 MB
+                            <input type="hidden" id="size" val="0" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2">Chia sẻ thêm (nếu có)</label>
+                        <div class="col-md-10">
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            rows="4"
+                            maxlength="300"
+                          ></textarea>
+                          <p class="text-muted">Tối đa 300 kí tự</p>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          class="col-form-label col-md-2 text-nowrap"
+                          for="Privacy"
+                        ></label>
+                        <div class="col-md-10">
+                          <div class="Privacy">
+                            <input
+                              type="checkbox"
+                              required
+                              name="Privacy"
+                              id="Privacy"
+                            />
+                            <label
+                              class="form-check-label"
+                              style="margin: 0 5px"
+                              for="Privacy"
+                              >Tôi đã đọc, hiểu và đồng ý cho phép Học Viện PACE
+                              thu thập, sử dụng và xử lý dữ liệu cá nhân của tôi
+                              / chúng tôi theo các quy định và đồng ý với các
+                              nội dung của
+                              <a
+                                href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                                target="_blank"
+                                >Chính sách Bảo mật dữ liệu của PACE</a
+                              >.</label
+                            ><br />
+                            <div class="invalid-feedback" for="Privacy">
+                              <i class="fas fa-info-circle"></i> Vui lòng đọc
+                              &amp; chấp nhận chính sách bảo mật dữ liệu của
+                              PACE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="row text-center" style="font-size: 13px">
+                        Những hồ sơ phù hợp sẽ được Phòng Nhân sự mời phỏng vấn
+                        trong vòng 02 tuần làm việc <br />(kể từ ngày gửi thông
+                        tin dự tuyển). Chúng tôi xin phép KHÔNG phản hồi đối với
+                        những hồ sơ chưa phù hợp với nhu cầu.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-uppercase me-4 px-5"
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy
+                      </button>
+                      <button
+                        type="submit"
+                        id="myBtn"
+                        onclick="BeginValidate();"
+                        class="btn btn-pace-blue text-uppercase px-5"
+                      >
+                        Nộp hồ sơ
+                      </button>
+                      <hr />
+                      <div
+                        class="text-sm mb-3"
+                        style="
+                          margin-top: 15px;
+                          font-size: 15px;
+                          text-align: justify;
+                        "
+                      >
+                        Trang web này được bảo vệ bởi reCAPTCHA và áp dụng
+                        <a
+                          href="https://policies.google.com/privacy"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách quyền riêng tư</a
+                        >
+                        cũng như
+                        <a
+                          href="https://policies.google.com/terms"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Điều khoản dịch vụ</a
+                        >
+                        của Google. Thông tin bạn chia sẻ với chúng tôi sẽ được
+                        sử dụng theo
+                        <a
+                          href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách Bảo mật dữ liệu của PACE</a
+                        >.
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- // APPLICATION FORM -->
+            <div class="accordion-item recruitment-item pt-1">
+              <div
+                class="d-md-flex gap-3 justify-content-between align-items-md-start pt-4 pb-4 pb-md-0"
+                id="recruitmentItem10"
+              >
+                <div class="text" style="font-size: 16px">
+                  <p class="text-pace-light-blue job-title mb-1 mb-md-3">
+                    SENIOR BUSINESS DEVELOPMENT EXECUTIVE (PHỤ TRÁCH PHÁT TRIỂN
+                    KINH DOANH)
+                  </p>
+                  <p class="mb-1 mb-md-3">Hình thức làm việc: Toàn thời gian</p>
+                  <p class="mb-1 mb-md-3">Nơi làm việc: Hà Nội, TP.HCM</p>
+                </div>
+                <button
+                  class="btn btn-outline-pace-light-blue"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recruitmentItemContent10"
+                  aria-expanded="false"
+                  aria-controls="recruitmentItemContent10"
+                >
+                  Xem chi tiết
+                </button>
+              </div>
+              <div
+                id="recruitmentItemContent10"
+                class="accordion-collapse collapse"
+                aria-labelledby="recruitmentItem10"
+                data-bs-parent="#recruitmentList"
+              >
+                <div
+                  class="accordion-body bg-pace-body-background p-4 pe-5 position-relative"
+                >
+                  <button
+                    type="button"
+                    class="btn-close position-absolute me-3 mt-3"
+                    style="right: 0; top: 0"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#recruitmentItemContent10"
+                    aria-expanded="true"
+                    aria-controls="recruitmentItemContent10"
+                  ></button>
+                  <div class="recruitment-content">
+                    <h5>Mô tả công việc</h5>
+                    <ul>
+                      <li style="margin-bottom: 8px">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="font-family: Calibri, sans-serif"
+                              ><span style="font-family: 'Arial', sans-serif"
+                                >Phụ tr&aacute;ch ph&aacute;t triển c&aacute;c
+                                kh&aacute;ch h&agrave;ng doanh nghiệp (l&agrave;
+                                c&aacute;c tập đo&agrave;n đa quốc gia v&agrave;
+                                c&aacute;c tập đo&agrave;n h&agrave;ng đầu tại
+                                Việt Nam) nhằm cung cấp những giải ph&aacute;p
+                                đ&agrave;o tạo v&agrave; tư vấn đẳng cấp thế
+                                giới về ph&aacute;t triển l&atilde;nh đạo
+                                v&agrave; kiến tạo văn h&oacute;a của
+                                FranklinCovey (đối t&aacute;c to&agrave;n cầu
+                                của PACE) cho kh&aacute;ch h&agrave;ng.</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px; text-align: justify">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >Chăm s&oacute;c c&aacute;c doanh nghiệp
+                                  kh&aacute;ch h&agrave;ng hiện hữu v&agrave;
+                                  đồng h&agrave;nh c&ugrave;ng doanh nghiệp
+                                  trong việc chọn lựa những giải ph&aacute;p
+                                  đ&agrave;o tạo v&agrave; tư vấn ph&ugrave; hợp
+                                  với họ.</span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px; text-align: justify">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >Lắng nghe, t&igrave;m hiểu v&agrave; thu thập
+                                  th&ocirc;ng tin về kh&aacute;ch h&agrave;ng để
+                                  kịp thời đề xuất c&aacute;c giải ph&aacute;p
+                                  ph&ugrave; hợp với qu&aacute; tr&igrave;nh
+                                  ph&aacute;t triển tổ chức v&agrave; đội ngũ
+                                  của họ.</span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px; text-align: justify">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  ><span style="letter-spacing: -0.3pt"
+                                    >Điều phối c&aacute;c b&ecirc;n trong việc
+                                    triển khai kh&oacute;a học v&agrave;
+                                    c&aacute;c dự &aacute;n tư vấn cho
+                                    c&aacute;c doanh nghiệp theo đ&uacute;ng kế
+                                    hoạch cam kết một c&aacute;ch hiệu
+                                    quả.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px; text-align: justify">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >Đảm bảo dịch vụ cung cấp ho&agrave;n hảo
+                                  v&agrave; dịch vụ hỗ trợ tiếp theo sau
+                                  đ&oacute; để đ&aacute;p ứng v&agrave; vượt
+                                  mong đợi của kh&aacute;ch h&agrave;ng.
+                                </span></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                    </ul>
+
+                    <h5>Ghi chú</h5>
+                    <p style="text-align: justify">
+                      <span style="font-size: 14px"
+                        ><span style="font-family: Arial, Helvetica, sans-serif"
+                          >Trước khi tham gia c&ocirc;ng việc, ứng vi&ecirc;n sẽ
+                          được đ&agrave;o tạo để thấu hiểu c&ocirc;ng năng, tầm
+                          v&oacute;c, c&aacute;c điểm đặc sắc từ những sản
+                          phẩm/chương tr&igrave;nh/giải ph&aacute;p đ&agrave;o
+                          tạo đẳng cấp thể giới của PACE &amp; c&aacute;c đối
+                          t&aacute;c to&agrave;n cầu của PACE gồm:
+                          FranklinCovey, Blanchard, SIY global, Balanced
+                          Scorecard Institute,... để c&oacute; thể tự tin trong
+                          tư vấn c&ugrave;ng kh&aacute;ch h&agrave;ng doanh
+                          nghiệp.</span
+                        ></span
+                      >
+                    </p>
+
+                    <h5>Yêu cầu dự tuyển</h5>
+                    <ul>
+                      <li style="margin-bottom: 8px">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >C&oacute; kinh nghiệm về sales, ph&aacute;t
+                                  triển kh&aacute;ch h&agrave;ng.</span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >Tinh thần tr&aacute;ch nhiệm cao, chịu được
+                                  &aacute;p lực cao.</span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >Nếu ứng vi&ecirc;n từng du học ở nước
+                                  ngo&agrave;i (cử nh&acirc;n hoặc thạc sĩ) sẽ
+                                  l&agrave; một lợi thế.</span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                      <li style="margin-bottom: 8px">
+                        <span style="font-size: 11pt"
+                          ><span style="line-height: normal"
+                            ><span style="tab-stops: list 0.25in"
+                              ><span style="font-family: Calibri, sans-serif"
+                                ><span style="font-family: 'Arial', sans-serif"
+                                  >Tiếng Anh tốt; Ngoại h&igrave;nh v&agrave;
+                                  t&aacute;c phong chuy&ecirc;n nghiệp.</span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applicationForm10"
+                    class="btn btn-pace-lighter-blue w-100"
+                  >
+                    Gửi hồ sơ dự tuyển
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLICATION FORM -->
+            <div
+              class="modal fade"
+              id="applicationForm10"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="applicationFormLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                  <form
+                    id="applicationForm"
+                    action="https://consulting.pace.edu.vn/ung-tuyen/10"
+                    class="needs-validation"
+                    enctype="multipart/form-data"
+                    method="post"
+                    novalidate
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+                    />
+                    <input type="hidden" name="job" value="10" />
+                    <div
+                      class="modal-header rounded-0"
+                      style="
+                        background-color: #f5fcff;
+                        border: solid 1px #a1e6ff;
+                      "
+                    >
+                      <h5
+                        class="modal-title text-center w-100"
+                        id="applicationFormLabel"
+                        style="line-height: 1.2"
+                      >
+                        Vị trí ứng tuyển<br />
+                        <strong
+                          >SENIOR BUSINESS DEVELOPMENT EXECUTIVE<br />(PHỤ TRÁCH
+                          PHÁT TRIỂN KINH DOANH)</strong
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Đóng"
+                      ></button>
+                    </div>
+                    <div class="modal-body px-5">
+                      <p class="text-danger fst-italic" style="font-size: 12px">
+                        Lưu ý: (*) là những thông tin cần điền
+                      </p>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Họ và tên <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <input
+                            type="text"
+                            name="full_name"
+                            value=""
+                            class="form-control text-capitalize"
+                            placeholder="Họ tên đầy đủ"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            <i class="fas fa-info-circle"></i> Vui lòng nhập dữ
+                            liệu
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Danh xưng <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="0"
+                              id="gender0"
+                              name="gender"
+                              checked
+                            />
+                            <label class="form-check-label" for="gender0"
+                              >Chị</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="1"
+                              id="gender1"
+                              name="gender"
+                            />
+                            <label class="form-check-label" for="gender1"
+                              >Anh</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >E-mail <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            value=""
+                            email
+                            class="form-control"
+                            placeholder="E-mail đăng ký"
+                            required
+                          />
+                          <div class="email_valid text-danger"></div>
+                          <div class="invalid-feedback" for="email">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            E-mail.
+                          </div>
+                          <!-- <div class="invalid-feedback">
+                                <i class="fas fa-info-circle"></i> Vui lòng nhập dữ liệu                            </div> -->
+                        </div>
+                        <label class="col-md-2 text-end"
+                          >ĐTDĐ <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            id="mobile"
+                            name="mobile"
+                            value=""
+                            phone
+                            class="form-control"
+                            placeholder="Điện thoại di động"
+                            required
+                          />
+                          <div class="mobile_valid text-danger"></div>
+                          <div class="invalid-feedback" for="mobile">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            ĐTDĐ.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >CV <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="uploader-container p-2 border rounded">
+                            <div class="fileBrowser w-100 h-100">
+                              <div class="label">Attach your CV</div>
+                              <div
+                                class="info fst-italic"
+                                style="color: #cacaca"
+                              >
+                                Click to select & upload your CV
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              id="cvFileInput"
+                              name="cv_file"
+                              accept="application/pdf"
+                              aria-describedby="cvFileInput"
+                              aria-label="Upload"
+                            />
+                          </div>
+                          <div
+                            class="text-danger fst-italic mt-2"
+                            style="font-size: 12px"
+                          >
+                            Lưu ý: Chấp nhận file PDF, dung lượng không quá 4 MB
+                            <input type="hidden" id="size" val="0" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2">Chia sẻ thêm (nếu có)</label>
+                        <div class="col-md-10">
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            rows="4"
+                            maxlength="300"
+                          ></textarea>
+                          <p class="text-muted">Tối đa 300 kí tự</p>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          class="col-form-label col-md-2 text-nowrap"
+                          for="Privacy"
+                        ></label>
+                        <div class="col-md-10">
+                          <div class="Privacy">
+                            <input
+                              type="checkbox"
+                              required
+                              name="Privacy"
+                              id="Privacy"
+                            />
+                            <label
+                              class="form-check-label"
+                              style="margin: 0 5px"
+                              for="Privacy"
+                              >Tôi đã đọc, hiểu và đồng ý cho phép Học Viện PACE
+                              thu thập, sử dụng và xử lý dữ liệu cá nhân của tôi
+                              / chúng tôi theo các quy định và đồng ý với các
+                              nội dung của
+                              <a
+                                href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                                target="_blank"
+                                >Chính sách Bảo mật dữ liệu của PACE</a
+                              >.</label
+                            ><br />
+                            <div class="invalid-feedback" for="Privacy">
+                              <i class="fas fa-info-circle"></i> Vui lòng đọc
+                              &amp; chấp nhận chính sách bảo mật dữ liệu của
+                              PACE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="row text-center" style="font-size: 13px">
+                        Những hồ sơ phù hợp sẽ được Phòng Nhân sự mời phỏng vấn
+                        trong vòng 02 tuần làm việc <br />(kể từ ngày gửi thông
+                        tin dự tuyển). Chúng tôi xin phép KHÔNG phản hồi đối với
+                        những hồ sơ chưa phù hợp với nhu cầu.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-uppercase me-4 px-5"
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy
+                      </button>
+                      <button
+                        type="submit"
+                        id="myBtn"
+                        onclick="BeginValidate();"
+                        class="btn btn-pace-blue text-uppercase px-5"
+                      >
+                        Nộp hồ sơ
+                      </button>
+                      <hr />
+                      <div
+                        class="text-sm mb-3"
+                        style="
+                          margin-top: 15px;
+                          font-size: 15px;
+                          text-align: justify;
+                        "
+                      >
+                        Trang web này được bảo vệ bởi reCAPTCHA và áp dụng
+                        <a
+                          href="https://policies.google.com/privacy"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách quyền riêng tư</a
+                        >
+                        cũng như
+                        <a
+                          href="https://policies.google.com/terms"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Điều khoản dịch vụ</a
+                        >
+                        của Google. Thông tin bạn chia sẻ với chúng tôi sẽ được
+                        sử dụng theo
+                        <a
+                          href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách Bảo mật dữ liệu của PACE</a
+                        >.
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- // APPLICATION FORM -->
+            <div class="accordion-item recruitment-item pt-1">
+              <div
+                class="d-md-flex gap-3 justify-content-between align-items-md-start pt-4 pb-4 pb-md-0"
+                id="recruitmentItem9"
+              >
+                <div class="text" style="font-size: 16px">
+                  <p class="text-pace-light-blue job-title mb-1 mb-md-3">
+                    BUSINESS DEVELOPMENT MANAGER (QUẢN LÝ PHÁT TRIỂN KINH DOANH)
+                  </p>
+                  <p class="mb-1 mb-md-3">Hình thức làm việc: Toàn thời gian</p>
+                  <p class="mb-1 mb-md-3">Nơi làm việc: TP.HCM</p>
+                </div>
+                <button
+                  class="btn btn-outline-pace-light-blue"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recruitmentItemContent9"
+                  aria-expanded="false"
+                  aria-controls="recruitmentItemContent9"
+                >
+                  Xem chi tiết
+                </button>
+              </div>
+              <div
+                id="recruitmentItemContent9"
+                class="accordion-collapse collapse"
+                aria-labelledby="recruitmentItem9"
+                data-bs-parent="#recruitmentList"
+              >
+                <div
+                  class="accordion-body bg-pace-body-background p-4 pe-5 position-relative"
+                >
+                  <button
+                    type="button"
+                    class="btn-close position-absolute me-3 mt-3"
+                    style="right: 0; top: 0"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#recruitmentItemContent9"
+                    aria-expanded="true"
+                    aria-controls="recruitmentItemContent9"
+                  ></button>
+                  <div class="recruitment-content">
+                    <h5>Mô tả công việc</h5>
+                    <ul>
+                      <li style="text-align: justify">
+                        Quản l&yacute; đội ngũ ph&aacute;t triển kinh doanh
+                        trong c&ocirc;ng t&aacute;c ph&aacute;t triển c&aacute;c
+                        kh&aacute;ch h&agrave;ng doanh nghiệp (l&agrave;
+                        c&aacute;c tập đo&agrave;n đa quốc gia v&agrave;
+                        c&aacute;c tập đo&agrave;n h&agrave;ng đầu tại Việt
+                        Nam); Từ đ&oacute; c&oacute; thể cung cấp những giải
+                        ph&aacute;p đẳng cấp thế giới của PACE v&agrave;
+                        c&aacute;c đối t&aacute;c to&agrave;n cầu của PACE, giải
+                        quyết những vấn đề kh&oacute; khăn m&agrave;
+                        kh&aacute;ch h&agrave;ng doanh nghiệp đang gặp phải
+                        li&ecirc;n quan đến chiến lược, quản trị, ph&aacute;t
+                        triển l&atilde;nh đạo, kỹ năng chuy&ecirc;n
+                        nghiệp&hellip;
+                      </li>
+                      <li style="text-align: justify">
+                        L&ecirc;n chiến lược, kế hoạch kinh doanh, gi&uacute;p
+                        đội ngũ ph&aacute;t triển kinh doanh ph&aacute;t triển
+                        c&aacute;c mối quan hệ đối t&aacute;c l&acirc;u
+                        d&agrave;i với c&aacute;c kh&aacute;ch h&agrave;ng doanh
+                        nghiệp, đảm bảo dịch vụ cung cấp v&agrave; hỗ trợ
+                        ho&agrave;n hảo, lu&ocirc;n đ&aacute;p ứng mong đợi của
+                        kh&aacute;ch h&agrave;ng.
+                      </li>
+                      <li style="text-align: justify">
+                        L&ecirc;n kế hoạch v&agrave; chịu tr&aacute;ch nhiệm
+                        cuối c&ugrave;ng trong việc đ&agrave;o tạo, huấn luyện,
+                        kiểm tra kết quả hoạt động của đội ngũ ph&aacute;t triển
+                        kinh doanh do m&igrave;nh phụ tr&aacute;ch.
+                      </li>
+                      <li style="text-align: justify">
+                        S&aacute;t c&aacute;nh với c&aacute;c Th&agrave;nh
+                        vi&ecirc;n Ban Chuy&ecirc;n M&ocirc;n trong c&aacute;c
+                        hoạt động giao dịch v&agrave; ph&aacute;t triển
+                        kh&aacute;ch h&agrave;ng.
+                      </li>
+                    </ul>
+
+                    <h5>Ghi chú</h5>
+                    <p style="text-align: justify">
+                      Trước khi tham gia c&ocirc;ng việc, ứng vi&ecirc;n sẽ được
+                      đ&agrave;o tạo để thấu hiểu c&ocirc;ng năng, tầm
+                      v&oacute;c, c&aacute;c điểm đặc sắc từ những sản
+                      phẩm/chương tr&igrave;nh/giải ph&aacute;p đ&agrave;o tạo
+                      đẳng cấp thể giới của PACE &amp; c&aacute;c đối t&aacute;c
+                      to&agrave;n cầu của PACE gồm: FranklinCovey, Ken
+                      Blanchard, Search Inside Yourself Leadership Institute,
+                      Balanced Scorecard Institute, ĐH George Washington... để
+                      c&oacute; thể tự tin trong tư vấn c&ugrave;ng kh&aacute;ch
+                      h&agrave;ng doanh nghiệp.
+                    </p>
+
+                    <h5>Yêu cầu dự tuyển</h5>
+                    <ul>
+                      <li style="text-align: justify">
+                        C&oacute; bề d&agrave;y kinh nghiệm trong ph&aacute;t
+                        triển kh&aacute;ch h&agrave;ng doanh nghiệp cũng như
+                        trong quản l&yacute; đội ngũ kinh doanh.
+                      </li>
+                      <li style="text-align: justify">
+                        C&oacute; khả năng l&agrave;m việc độc lập lẫn
+                        l&agrave;m việc đội nh&oacute;m trong m&ocirc;i trường
+                        chuy&ecirc;n nghiệp, đ&ocirc;i khi &aacute;p lực
+                        c&ocirc;ng việc cao.
+                      </li>
+                      <li style="text-align: justify">
+                        C&oacute; khả năng giao dịch tốt bằng tiếng Anh; Ngoại
+                        h&igrave;nh v&agrave; t&aacute;c phong chuy&ecirc;n
+                        nghiệp.
+                      </li>
+                      <li style="text-align: justify">
+                        C&oacute; kinh nghiệm về sales B2B hoặc sales dịch vụ sẽ
+                        l&agrave; một lợi thế.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applicationForm9"
+                    class="btn btn-pace-lighter-blue w-100"
+                  >
+                    Gửi hồ sơ dự tuyển
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLICATION FORM -->
+            <div
+              class="modal fade"
+              id="applicationForm9"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="applicationFormLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                  <form
+                    id="applicationForm"
+                    action="https://consulting.pace.edu.vn/ung-tuyen/9"
+                    class="needs-validation"
+                    enctype="multipart/form-data"
+                    method="post"
+                    novalidate
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+                    />
+                    <input type="hidden" name="job" value="9" />
+                    <div
+                      class="modal-header rounded-0"
+                      style="
+                        background-color: #f5fcff;
+                        border: solid 1px #a1e6ff;
+                      "
+                    >
+                      <h5
+                        class="modal-title text-center w-100"
+                        id="applicationFormLabel"
+                        style="line-height: 1.2"
+                      >
+                        Vị trí ứng tuyển<br />
+                        <strong
+                          >BUSINESS DEVELOPMENT MANAGER<br />(QUẢN LÝ PHÁT TRIỂN
+                          KINH DOANH)</strong
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Đóng"
+                      ></button>
+                    </div>
+                    <div class="modal-body px-5">
+                      <p class="text-danger fst-italic" style="font-size: 12px">
+                        Lưu ý: (*) là những thông tin cần điền
+                      </p>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Họ và tên <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <input
+                            type="text"
+                            name="full_name"
+                            value=""
+                            class="form-control text-capitalize"
+                            placeholder="Họ tên đầy đủ"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            <i class="fas fa-info-circle"></i> Vui lòng nhập dữ
+                            liệu
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Danh xưng <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="0"
+                              id="gender0"
+                              name="gender"
+                              checked
+                            />
+                            <label class="form-check-label" for="gender0"
+                              >Chị</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="1"
+                              id="gender1"
+                              name="gender"
+                            />
+                            <label class="form-check-label" for="gender1"
+                              >Anh</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >E-mail <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            value=""
+                            email
+                            class="form-control"
+                            placeholder="E-mail đăng ký"
+                            required
+                          />
+                          <div class="email_valid text-danger"></div>
+                          <div class="invalid-feedback" for="email">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            E-mail.
+                          </div>
+                          <!-- <div class="invalid-feedback">
+                                <i class="fas fa-info-circle"></i> Vui lòng nhập dữ liệu                            </div> -->
+                        </div>
+                        <label class="col-md-2 text-end"
+                          >ĐTDĐ <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            id="mobile"
+                            name="mobile"
+                            value=""
+                            phone
+                            class="form-control"
+                            placeholder="Điện thoại di động"
+                            required
+                          />
+                          <div class="mobile_valid text-danger"></div>
+                          <div class="invalid-feedback" for="mobile">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            ĐTDĐ.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >CV <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="uploader-container p-2 border rounded">
+                            <div class="fileBrowser w-100 h-100">
+                              <div class="label">Attach your CV</div>
+                              <div
+                                class="info fst-italic"
+                                style="color: #cacaca"
+                              >
+                                Click to select & upload your CV
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              id="cvFileInput"
+                              name="cv_file"
+                              accept="application/pdf"
+                              aria-describedby="cvFileInput"
+                              aria-label="Upload"
+                            />
+                          </div>
+                          <div
+                            class="text-danger fst-italic mt-2"
+                            style="font-size: 12px"
+                          >
+                            Lưu ý: Chấp nhận file PDF, dung lượng không quá 4 MB
+                            <input type="hidden" id="size" val="0" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2">Chia sẻ thêm (nếu có)</label>
+                        <div class="col-md-10">
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            rows="4"
+                            maxlength="300"
+                          ></textarea>
+                          <p class="text-muted">Tối đa 300 kí tự</p>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          class="col-form-label col-md-2 text-nowrap"
+                          for="Privacy"
+                        ></label>
+                        <div class="col-md-10">
+                          <div class="Privacy">
+                            <input
+                              type="checkbox"
+                              required
+                              name="Privacy"
+                              id="Privacy"
+                            />
+                            <label
+                              class="form-check-label"
+                              style="margin: 0 5px"
+                              for="Privacy"
+                              >Tôi đã đọc, hiểu và đồng ý cho phép Học Viện PACE
+                              thu thập, sử dụng và xử lý dữ liệu cá nhân của tôi
+                              / chúng tôi theo các quy định và đồng ý với các
+                              nội dung của
+                              <a
+                                href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                                target="_blank"
+                                >Chính sách Bảo mật dữ liệu của PACE</a
+                              >.</label
+                            ><br />
+                            <div class="invalid-feedback" for="Privacy">
+                              <i class="fas fa-info-circle"></i> Vui lòng đọc
+                              &amp; chấp nhận chính sách bảo mật dữ liệu của
+                              PACE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="row text-center" style="font-size: 13px">
+                        Những hồ sơ phù hợp sẽ được Phòng Nhân sự mời phỏng vấn
+                        trong vòng 02 tuần làm việc <br />(kể từ ngày gửi thông
+                        tin dự tuyển). Chúng tôi xin phép KHÔNG phản hồi đối với
+                        những hồ sơ chưa phù hợp với nhu cầu.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-uppercase me-4 px-5"
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy
+                      </button>
+                      <button
+                        type="submit"
+                        id="myBtn"
+                        onclick="BeginValidate();"
+                        class="btn btn-pace-blue text-uppercase px-5"
+                      >
+                        Nộp hồ sơ
+                      </button>
+                      <hr />
+                      <div
+                        class="text-sm mb-3"
+                        style="
+                          margin-top: 15px;
+                          font-size: 15px;
+                          text-align: justify;
+                        "
+                      >
+                        Trang web này được bảo vệ bởi reCAPTCHA và áp dụng
+                        <a
+                          href="https://policies.google.com/privacy"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách quyền riêng tư</a
+                        >
+                        cũng như
+                        <a
+                          href="https://policies.google.com/terms"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Điều khoản dịch vụ</a
+                        >
+                        của Google. Thông tin bạn chia sẻ với chúng tôi sẽ được
+                        sử dụng theo
+                        <a
+                          href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách Bảo mật dữ liệu của PACE</a
+                        >.
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- // APPLICATION FORM -->
+            <div class="accordion-item recruitment-item pt-1">
+              <div
+                class="d-md-flex gap-3 justify-content-between align-items-md-start pt-4 pb-4 pb-md-0"
+                id="recruitmentItem15"
+              >
+                <div class="text" style="font-size: 16px">
+                  <p class="text-pace-light-blue job-title mb-1 mb-md-3">
+                    PART-TIME TRAINER (GIẢNG VIÊN CỘNG TÁC)
+                  </p>
+                  <p class="mb-1 mb-md-3">Hình thức làm việc: Cộng tác</p>
+                  <p class="mb-1 mb-md-3">Nơi làm việc: Hà Nội, TP.HCM</p>
+                </div>
+                <button
+                  class="btn btn-outline-pace-light-blue"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recruitmentItemContent15"
+                  aria-expanded="false"
+                  aria-controls="recruitmentItemContent15"
+                >
+                  Xem chi tiết
+                </button>
+              </div>
+              <div
+                id="recruitmentItemContent15"
+                class="accordion-collapse collapse"
+                aria-labelledby="recruitmentItem15"
+                data-bs-parent="#recruitmentList"
+              >
+                <div
+                  class="accordion-body bg-pace-body-background p-4 pe-5 position-relative"
+                >
+                  <button
+                    type="button"
+                    class="btn-close position-absolute me-3 mt-3"
+                    style="right: 0; top: 0"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#recruitmentItemContent15"
+                    aria-expanded="true"
+                    aria-controls="recruitmentItemContent15"
+                  ></button>
+                  <div class="recruitment-content">
+                    <h5>Mô tả công việc</h5>
+                    <ul>
+                      <li style="text-align: justify">
+                        Được PACE đ&agrave;o tạo để trở th&agrave;nh Giảng
+                        vi&ecirc;n Ch&iacute;nh thức của PACE từ đ&oacute;
+                        c&oacute; thể phụ tr&aacute;ch chuy&ecirc;n m&ocirc;n
+                        v&agrave; tham gia giảng dạy (cho c&aacute;c doanh
+                        nghiệp trong v&agrave; ngo&agrave;i nước) về c&aacute;c
+                        chuy&ecirc;n đề thuộc một trong số c&aacute;c
+                        chuy&ecirc;n ng&agrave;nh về quản trị tổng qu&aacute;t
+                        v&agrave; quản trị chức năng như sau:&nbsp;<em
+                          >Leadership &amp; Management; Human Resource; Finance
+                          &amp; Accounting; Marketing &amp; Branding; Sales
+                          &amp; Customer Service; Supply Chain; Production &amp;
+                          Operation; Project Management; Soft
+                          Skills/Professional Skills; and Others.</em
+                        >
+                      </li>
+                      <li style="text-align: justify">
+                        Được trao cơ hội ph&aacute;t triển v&agrave; được
+                        đ&agrave;o tạo li&ecirc;n tục để c&oacute; thể
+                        l&agrave;m c&ocirc;ng t&aacute;c chuy&ecirc;n m&ocirc;n
+                        v&agrave; ph&acirc;n c&ocirc;ng giảng dạy c&aacute;c
+                        chuy&ecirc;n đề thuộc thế mạnh chuy&ecirc;n m&ocirc;n
+                        của m&igrave;nh.
+                      </li>
+                    </ul>
+
+                    <h5>Yêu cầu dự tuyển</h5>
+                    <ul>
+                      <li style="text-align: justify">
+                        Kh&ocirc;ng cần kinh nghiệm giảng dạy, chỉ cần c&oacute;
+                        tố chất truyền đạt v&agrave; c&oacute; kh&aacute;t khao
+                        trở th&agrave;nh một giảng vi&ecirc;n chuy&ecirc;n
+                        nghiệp.
+                      </li>
+                      <li style="text-align: justify">
+                        C&oacute; kiến thức s&acirc;u v&agrave; kinh nghiệm
+                        d&agrave;y trong lĩnh vực m&agrave; m&igrave;nh mong
+                        muốn giảng dạy khi trở th&agrave;nh giảng vi&ecirc;n của
+                        PACE.
+                      </li>
+                      <li style="text-align: justify">
+                        C&oacute; thể tham gia giảng dạy b&aacute;n thời gian
+                        (giảng cuối tuần hoặc buổi tối) hoặc trở th&agrave;nh
+                        giảng vi&ecirc;n to&agrave;n thời gian của PACE
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applicationForm15"
+                    class="btn btn-pace-lighter-blue w-100"
+                  >
+                    Gửi hồ sơ dự tuyển
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLICATION FORM -->
+            <div
+              class="modal fade"
+              id="applicationForm15"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="applicationFormLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                  <form
+                    id="applicationForm"
+                    action="https://consulting.pace.edu.vn/ung-tuyen/15"
+                    class="needs-validation"
+                    enctype="multipart/form-data"
+                    method="post"
+                    novalidate
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+                    />
+                    <input type="hidden" name="job" value="15" />
+                    <div
+                      class="modal-header rounded-0"
+                      style="
+                        background-color: #f5fcff;
+                        border: solid 1px #a1e6ff;
+                      "
+                    >
+                      <h5
+                        class="modal-title text-center w-100"
+                        id="applicationFormLabel"
+                        style="line-height: 1.2"
+                      >
+                        Vị trí ứng tuyển<br />
+                        <strong
+                          >PART-TIME TRAINER<br />(GIẢNG VIÊN CỘNG TÁC)</strong
+                        >
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Đóng"
+                      ></button>
+                    </div>
+                    <div class="modal-body px-5">
+                      <p class="text-danger fst-italic" style="font-size: 12px">
+                        Lưu ý: (*) là những thông tin cần điền
+                      </p>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Họ và tên <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <input
+                            type="text"
+                            name="full_name"
+                            value=""
+                            class="form-control text-capitalize"
+                            placeholder="Họ tên đầy đủ"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            <i class="fas fa-info-circle"></i> Vui lòng nhập dữ
+                            liệu
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Danh xưng <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="0"
+                              id="gender0"
+                              name="gender"
+                              checked
+                            />
+                            <label class="form-check-label" for="gender0"
+                              >Chị</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="1"
+                              id="gender1"
+                              name="gender"
+                            />
+                            <label class="form-check-label" for="gender1"
+                              >Anh</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >E-mail <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            value=""
+                            email
+                            class="form-control"
+                            placeholder="E-mail đăng ký"
+                            required
+                          />
+                          <div class="email_valid text-danger"></div>
+                          <div class="invalid-feedback" for="email">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            E-mail.
+                          </div>
+                          <!-- <div class="invalid-feedback">
+                                <i class="fas fa-info-circle"></i> Vui lòng nhập dữ liệu                            </div> -->
+                        </div>
+                        <label class="col-md-2 text-end"
+                          >ĐTDĐ <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            id="mobile"
+                            name="mobile"
+                            value=""
+                            phone
+                            class="form-control"
+                            placeholder="Điện thoại di động"
+                            required
+                          />
+                          <div class="mobile_valid text-danger"></div>
+                          <div class="invalid-feedback" for="mobile">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            ĐTDĐ.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >CV <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="uploader-container p-2 border rounded">
+                            <div class="fileBrowser w-100 h-100">
+                              <div class="label">Attach your CV</div>
+                              <div
+                                class="info fst-italic"
+                                style="color: #cacaca"
+                              >
+                                Click to select & upload your CV
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              id="cvFileInput"
+                              name="cv_file"
+                              accept="application/pdf"
+                              aria-describedby="cvFileInput"
+                              aria-label="Upload"
+                            />
+                          </div>
+                          <div
+                            class="text-danger fst-italic mt-2"
+                            style="font-size: 12px"
+                          >
+                            Lưu ý: Chấp nhận file PDF, dung lượng không quá 4 MB
+                            <input type="hidden" id="size" val="0" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2">Chia sẻ thêm (nếu có)</label>
+                        <div class="col-md-10">
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            rows="4"
+                            maxlength="300"
+                          ></textarea>
+                          <p class="text-muted">Tối đa 300 kí tự</p>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          class="col-form-label col-md-2 text-nowrap"
+                          for="Privacy"
+                        ></label>
+                        <div class="col-md-10">
+                          <div class="Privacy">
+                            <input
+                              type="checkbox"
+                              required
+                              name="Privacy"
+                              id="Privacy"
+                            />
+                            <label
+                              class="form-check-label"
+                              style="margin: 0 5px"
+                              for="Privacy"
+                              >Tôi đã đọc, hiểu và đồng ý cho phép Học Viện PACE
+                              thu thập, sử dụng và xử lý dữ liệu cá nhân của tôi
+                              / chúng tôi theo các quy định và đồng ý với các
+                              nội dung của
+                              <a
+                                href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                                target="_blank"
+                                >Chính sách Bảo mật dữ liệu của PACE</a
+                              >.</label
+                            ><br />
+                            <div class="invalid-feedback" for="Privacy">
+                              <i class="fas fa-info-circle"></i> Vui lòng đọc
+                              &amp; chấp nhận chính sách bảo mật dữ liệu của
+                              PACE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="row text-center" style="font-size: 13px">
+                        Những hồ sơ phù hợp sẽ được Phòng Nhân sự mời phỏng vấn
+                        trong vòng 02 tuần làm việc <br />(kể từ ngày gửi thông
+                        tin dự tuyển). Chúng tôi xin phép KHÔNG phản hồi đối với
+                        những hồ sơ chưa phù hợp với nhu cầu.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-uppercase me-4 px-5"
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy
+                      </button>
+                      <button
+                        type="submit"
+                        id="myBtn"
+                        onclick="BeginValidate();"
+                        class="btn btn-pace-blue text-uppercase px-5"
+                      >
+                        Nộp hồ sơ
+                      </button>
+                      <hr />
+                      <div
+                        class="text-sm mb-3"
+                        style="
+                          margin-top: 15px;
+                          font-size: 15px;
+                          text-align: justify;
+                        "
+                      >
+                        Trang web này được bảo vệ bởi reCAPTCHA và áp dụng
+                        <a
+                          href="https://policies.google.com/privacy"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách quyền riêng tư</a
+                        >
+                        cũng như
+                        <a
+                          href="https://policies.google.com/terms"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Điều khoản dịch vụ</a
+                        >
+                        của Google. Thông tin bạn chia sẻ với chúng tôi sẽ được
+                        sử dụng theo
+                        <a
+                          href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách Bảo mật dữ liệu của PACE</a
+                        >.
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- // APPLICATION FORM -->
+            <div class="accordion-item recruitment-item pt-1">
+              <div
+                class="d-md-flex gap-3 justify-content-between align-items-md-start pt-4 pb-4 pb-md-0"
+                id="recruitmentItem16"
+              >
+                <div class="text" style="font-size: 16px">
+                  <p class="text-pace-light-blue job-title mb-1 mb-md-3">
+                    OTHER POSITIONS (VỊ TRÍ KHÁC)
+                  </p>
+                  <p class="mb-1 mb-md-3">Hình thức làm việc: Toàn thời gian</p>
+                  <p class="mb-1 mb-md-3">Nơi làm việc: TP.HCM</p>
+                </div>
+                <button
+                  class="btn btn-outline-pace-light-blue"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#recruitmentItemContent16"
+                  aria-expanded="false"
+                  aria-controls="recruitmentItemContent16"
+                >
+                  Xem chi tiết
+                </button>
+              </div>
+              <div
+                id="recruitmentItemContent16"
+                class="accordion-collapse collapse"
+                aria-labelledby="recruitmentItem16"
+                data-bs-parent="#recruitmentList"
+              >
+                <div
+                  class="accordion-body bg-pace-body-background p-4 pe-5 position-relative"
+                >
+                  <button
+                    type="button"
+                    class="btn-close position-absolute me-3 mt-3"
+                    style="right: 0; top: 0"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#recruitmentItemContent16"
+                    aria-expanded="true"
+                    aria-controls="recruitmentItemContent16"
+                  ></button>
+                  <div class="recruitment-content">
+                    <h5>Mô tả công việc</h5>
+                    <p style="text-align: justify">
+                      Ngo&agrave;i c&aacute;c vị tr&iacute; th&ocirc;ng
+                      b&aacute;o tuyển dụng n&oacute;i tr&ecirc;n, PACE
+                      lu&ocirc;n sẵn s&agrave;ng ch&agrave;o đ&oacute;n
+                      c&aacute;c ứng vi&ecirc;n c&oacute; t&acirc;m huyết,
+                      c&oacute; mong muốn gia nhập đội ngũ PACE v&agrave;
+                      ph&aacute;t triển nghề nghiệp v&agrave; sự nghiệp
+                      l&acirc;u d&agrave;i c&ugrave;ng PACE.
+                    </p>
+                    <p style="text-align: justify">
+                      C&aacute;c ứng vi&ecirc;n (d&ugrave; tốt nghiệp bất cứ
+                      ng&agrave;nh học n&agrave;o), nếu tự thấy m&igrave;nh
+                      c&oacute; thể ph&ugrave; hợp với bất kỳ cấp bậc n&agrave;o
+                      (cấp cao, cấp trung, cấp nh&acirc;n vi&ecirc;n), ở bất kỳ
+                      mảng c&ocirc;ng việc n&agrave;o trong PACE (chẳng hạn như
+                      giảng dạy, tư vấn; sales, marketing, operation; nh&acirc;n
+                      sự, h&agrave;nh ch&iacute;nh, kế to&aacute;n; gi&aacute;o
+                      vụ, học vụ; trợ l&yacute;, thư k&yacute;&hellip;), vui
+                      l&ograve;ng đừng ngần ngại, h&atilde;y chủ động ứng tuyển
+                      với PACE!
+                    </p>
+                  </div>
+
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#applicationForm16"
+                    class="btn btn-pace-lighter-blue w-100"
+                  >
+                    Gửi hồ sơ dự tuyển
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLICATION FORM -->
+            <div
+              class="modal fade"
+              id="applicationForm16"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="applicationFormLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                  <form
+                    id="applicationForm"
+                    action="https://consulting.pace.edu.vn/ung-tuyen/16"
+                    class="needs-validation"
+                    enctype="multipart/form-data"
+                    method="post"
+                    novalidate
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+                    />
+                    <input type="hidden" name="job" value="16" />
+                    <div
+                      class="modal-header rounded-0"
+                      style="
+                        background-color: #f5fcff;
+                        border: solid 1px #a1e6ff;
+                      "
+                    >
+                      <h5
+                        class="modal-title text-center w-100"
+                        id="applicationFormLabel"
+                        style="line-height: 1.2"
+                      >
+                        Vị trí ứng tuyển<br />
+                        <strong>OTHER POSITIONS<br />(VỊ TRÍ KHÁC)</strong>
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Đóng"
+                      ></button>
+                    </div>
+                    <div class="modal-body px-5">
+                      <p class="text-danger fst-italic" style="font-size: 12px">
+                        Lưu ý: (*) là những thông tin cần điền
+                      </p>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Họ và tên <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <input
+                            type="text"
+                            name="full_name"
+                            value=""
+                            class="form-control text-capitalize"
+                            placeholder="Họ tên đầy đủ"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            <i class="fas fa-info-circle"></i> Vui lòng nhập dữ
+                            liệu
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >Danh xưng <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="0"
+                              id="gender0"
+                              name="gender"
+                              checked
+                            />
+                            <label class="form-check-label" for="gender0"
+                              >Chị</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              type="radio"
+                              value="1"
+                              id="gender1"
+                              name="gender"
+                            />
+                            <label class="form-check-label" for="gender1"
+                              >Anh</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >E-mail <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            value=""
+                            email
+                            class="form-control"
+                            placeholder="E-mail đăng ký"
+                            required
+                          />
+                          <div class="email_valid text-danger"></div>
+                          <div class="invalid-feedback" for="email">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            E-mail.
+                          </div>
+                          <!-- <div class="invalid-feedback">
+                                <i class="fas fa-info-circle"></i> Vui lòng nhập dữ liệu                            </div> -->
+                        </div>
+                        <label class="col-md-2 text-end"
+                          >ĐTDĐ <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            id="mobile"
+                            name="mobile"
+                            value=""
+                            phone
+                            class="form-control"
+                            placeholder="Điện thoại di động"
+                            required
+                          />
+                          <div class="mobile_valid text-danger"></div>
+                          <div class="invalid-feedback" for="mobile">
+                            <i class="fas fa-info-circle"></i> Vui lòng cho biết
+                            ĐTDĐ.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2"
+                          >CV <span class="text-danger">*</span></label
+                        >
+                        <div class="col-md-10">
+                          <div class="uploader-container p-2 border rounded">
+                            <div class="fileBrowser w-100 h-100">
+                              <div class="label">Attach your CV</div>
+                              <div
+                                class="info fst-italic"
+                                style="color: #cacaca"
+                              >
+                                Click to select & upload your CV
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              id="cvFileInput"
+                              name="cv_file"
+                              accept="application/pdf"
+                              aria-describedby="cvFileInput"
+                              aria-label="Upload"
+                            />
+                          </div>
+                          <div
+                            class="text-danger fst-italic mt-2"
+                            style="font-size: 12px"
+                          >
+                            Lưu ý: Chấp nhận file PDF, dung lượng không quá 4 MB
+                            <input type="hidden" id="size" val="0" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <label class="col-md-2">Chia sẻ thêm (nếu có)</label>
+                        <div class="col-md-10">
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            rows="4"
+                            maxlength="300"
+                          ></textarea>
+                          <p class="text-muted">Tối đa 300 kí tự</p>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label
+                          class="col-form-label col-md-2 text-nowrap"
+                          for="Privacy"
+                        ></label>
+                        <div class="col-md-10">
+                          <div class="Privacy">
+                            <input
+                              type="checkbox"
+                              required
+                              name="Privacy"
+                              id="Privacy"
+                            />
+                            <label
+                              class="form-check-label"
+                              style="margin: 0 5px"
+                              for="Privacy"
+                              >Tôi đã đọc, hiểu và đồng ý cho phép Học Viện PACE
+                              thu thập, sử dụng và xử lý dữ liệu cá nhân của tôi
+                              / chúng tôi theo các quy định và đồng ý với các
+                              nội dung của
+                              <a
+                                href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                                target="_blank"
+                                >Chính sách Bảo mật dữ liệu của PACE</a
+                              >.</label
+                            ><br />
+                            <div class="invalid-feedback" for="Privacy">
+                              <i class="fas fa-info-circle"></i> Vui lòng đọc
+                              &amp; chấp nhận chính sách bảo mật dữ liệu của
+                              PACE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="row text-center" style="font-size: 13px">
+                        Những hồ sơ phù hợp sẽ được Phòng Nhân sự mời phỏng vấn
+                        trong vòng 02 tuần làm việc <br />(kể từ ngày gửi thông
+                        tin dự tuyển). Chúng tôi xin phép KHÔNG phản hồi đối với
+                        những hồ sơ chưa phù hợp với nhu cầu.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-uppercase me-4 px-5"
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy
+                      </button>
+                      <button
+                        type="submit"
+                        id="myBtn"
+                        onclick="BeginValidate();"
+                        class="btn btn-pace-blue text-uppercase px-5"
+                      >
+                        Nộp hồ sơ
+                      </button>
+                      <hr />
+                      <div
+                        class="text-sm mb-3"
+                        style="
+                          margin-top: 15px;
+                          font-size: 15px;
+                          text-align: justify;
+                        "
+                      >
+                        Trang web này được bảo vệ bởi reCAPTCHA và áp dụng
+                        <a
+                          href="https://policies.google.com/privacy"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách quyền riêng tư</a
+                        >
+                        cũng như
+                        <a
+                          href="https://policies.google.com/terms"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Điều khoản dịch vụ</a
+                        >
+                        của Google. Thông tin bạn chia sẻ với chúng tôi sẽ được
+                        sử dụng theo
+                        <a
+                          href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                          class="text-[#0057c8]"
+                          target="_blank"
+                          >Chính sách Bảo mật dữ liệu của PACE</a
+                        >.
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- // APPLICATION FORM -->
+          </div>
+        </div>
+        <!-- // JOB LIST -->
+      </div>
+    </section>
+    <!-- // MAIN CONTENT -->
+
+    <section id="pace-benefits" class="py-5">
+      <div class="container">
+        <h3 class="section-title mb-4 text-pace-blue">
+          Những cơ hội khi bạn làm việc tại PACE
+        </h3>
+
+        <div
+          class="bg-pace-dark-yellow mb-4"
+          style="height: 10px; width: 80px"
+        ></div>
+
+        <div class="content">
+          <h6 class="fw-bold text-pace-blue" style="font-size: 20px">
+            Lương và thu nhập xứng đáng với công sức đóng góp và cạnh tranh với
+            thị trường lao động
+          </h6>
+          <p>
+            Thu nhập ở PACE được xác định dựa trên 2 tiêu chí là Hiệu quả công
+            việc và Thái độ làm việc, KHÔNG dựa trên bằng cấp, kinh nghiệm, tuổi
+            tác, thâm niên, năng lực hay chức danh.
+          </p>
+          <h6 class="fw-bold text-pace-blue mt-4" style="font-size: 20px">
+            Đầy đủ các chế độ bảo hiểm hàng năm theo quy định của nhà nước, bao
+            gồm: BHXH, BHYT, BHTN
+          </h6>
+          <p>
+            Các bảo hiểm này được đóng dựa trên mức lương thực tế. Ngoài 3 bảo
+            hiểm theo quy định nói trên, hàng năm, tất cả nhân viên PACE sẽ được
+            tặng thêm 3 chính sách chăm lo sức khỏe, bao gồm: Bảo hiểm sức khỏe
+            toàn diện, Bảo hiểm tai nạn và Khám sức khỏe tổng quát định kỳ.
+          </p>
+          <h6 class="fw-bold text-pace-blue mt-4" style="font-size: 20px">
+            Các quyền lợi đặc biệt về đời sống tinh thần và chăm sóc sức khỏe
+            hàng tháng
+          </h6>
+          <p>
+            Được tài trợ chi phí mua sách, thưởng thức nghệ thuật, chơi thể
+            thao…; cùng các chế độ phúc lợi hàng năm theo chính sách của PACE
+            như: Tham quan, nghỉ dưỡng hàng năm, nghỉ phép, nghỉ lễ tết, lương &
+            thưởng tháng 13, thưởng hoàn thành xuất sắc…
+          </p>
+
+          <h6 class="fw-bold text-pace-blue mt-4" style="font-size: 20px">
+            Cơ hội làm việc trong môi trường năng động, chuyên nghiệp và thân
+            thiện
+          </h6>
+          <p>
+            Được đào tạo bài bản về năng lực quản trị, năng lực chuyên môn
+            nghiệp vụ và các kỹ năng phát triển nghề nghiệp; Được tự do sáng
+            tạo, thể hiện quan điểm, bày tỏ chính kiến và phát triển bản thân
+            theo phương châm “Mỗi nhân viên, mỗi vị trí công việc đều đặc biệt
+            và quan trọng”.
+          </p>
+
+          <h6 class="fw-bold text-pace-blue" style="font-size: 20px">
+            Cơ hội thăng tiến & phát triển nghề nghiệp
+          </h6>
+          <p>
+            Được làm việc với nhiều đối tác lớn, uy tín trên phạm vi toàn cầu,
+            đặc biệt là các tập đoàn đào tạo lớn nhất thế giới mà PACE đang là
+            đối tác độc quyền tại Việt Nam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ĐỐI TÁC TOÀN CẦU -->
+    <section id="globalPartners" class="bg-white py-5">
+      <div class="container">
+        <h3 class="section-title text-center mb-4">
+          8 ĐỐI TÁC TOÀN CẦU CỦA PACE
+        </h3>
+        <div class="container globalPartners partner">
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner1"
+              >
+                <a href="https://www.franklincovey.com/" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/members/FCW.svg"
+                    alt="FranklinCovey"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://www.franklincovey.com/" target="_blank"
+                  >FranklinCovey</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  FranklinCovey l&agrave; tổ chức dẫn đầu thế giới, chuy&ecirc;n
+                  s&acirc;u về&nbsp;<strong
+                    >Ph&aacute;t triển l&atilde;nh đạo v&agrave; Chuyển đổi văn
+                    h&oacute;a</strong
+                  >&nbsp;với phương ph&aacute;p v&agrave; giải ph&aacute;p đột
+                  ph&aacute; c&oacute; tầm ảnh hưởng s&acirc;u rộng tr&ecirc;n
+                  to&agrave;n cầu. FranklinCovey Vietnam (một th&agrave;nh
+                  vi&ecirc;n của PACE) l&agrave; đối t&aacute;c độc quyền của
+                  FranklinCovey tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner5"
+              >
+                <a href="https://www.blanchard.com" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/global-partners/KB/Blanchard Logo Print w Clearspace-2297x735-360f3f1.webp"
+                    alt="Blanchard"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://www.blanchard.com" target="_blank"
+                  >Blanchard</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p>
+                  Blanchard l&agrave; tổ chức dẫn đầu thế giới về ph&aacute;t
+                  triển l&atilde;nh đạo, nhất l&agrave; về&nbsp;<strong
+                    >L&atilde;nh đạo Linh hoạt với M&ocirc; h&igrave;nh
+                    SLII</strong
+                  >. Blanchard Vietnam (một th&agrave;nh vi&ecirc;n của PACE)
+                  l&agrave; đối t&aacute;c đặc quyền để triển khai c&aacute;c
+                  chương tr&igrave;nh đ&agrave;o tạo đẳng cấp thế giới của
+                  Blanchard tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner4"
+              >
+                <a href="https://www.siyglobal.com/" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/global-partners/SIY/SIY-Global.png"
+                    alt="SIY Global"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://www.siyglobal.com/" target="_blank"
+                  >SIY Global</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  SIY Global l&agrave; tổ chức dẫn đầu thế giới về
+                  <strong>L&atilde;nh đạo tỉnh thức</strong>, với sự kết hợp
+                  khoa học n&atilde;o bộ v&agrave; thực h&agrave;nh minfulness
+                  để ph&aacute;t triển tr&iacute; tuệ cảm x&uacute;c cho
+                  c&aacute;c cấp l&atilde;nh đạo. Mindful Leadership Vietnam
+                  (một th&agrave;nh vi&ecirc;n của PACE) l&agrave; đối
+                  t&aacute;c tổ chức độc quyền của SIY Global tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner6"
+              >
+                <a href="https://www.amanet.org/" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/AMA/AMA.webp"
+                    alt="American Management Association (AMA)"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://www.amanet.org/" target="_blank"
+                  >American Management Association (AMA)</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  Với bề d&agrave;y 100 năm lịch sử, AMA hiện l&agrave;
+                  <strong>Hiệp hội Quản trị Doanhnghiệp </strong>lớn nhất
+                  v&agrave; c&oacute; ảnh hưởng nhất thế giới. AMA hiện
+                  c&oacute; trụ sở v&agrave; phạm vi hoạt động ở khắp c&aacute;c
+                  bang của nước Mỹ v&agrave; ở 5 ch&acirc;u lục. PACE l&agrave;
+                  đối t&aacute;c độc quyền của AMA tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner9"
+              >
+                <a href="https://shrm.org/" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/IHRM/logo-shrm.png"
+                    alt="Society for Human Resource Management (SHRM)"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://shrm.org/" target="_blank"
+                  >Society for Human Resource Management (SHRM)</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  SHRM l&agrave; tổ chức lớn nhất v&agrave; c&oacute; ảnh hưởng
+                  nhất thế giới về <strong>Quản trị Nh&acirc;n sự</strong>. PACE
+                  l&agrave; đối t&aacute;c độc quyền của SHRM để triển khai
+                  c&aacute;c chương tr&igrave;nh đ&agrave;o tạo đẳng cấp thế
+                  giới về quản trị nh&acirc;n sự của SHRM tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner10"
+              >
+                <a
+                  href="https://digitalmarketinginstitute.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/DMI/logo-dmi.png"
+                    alt="Digital Marketing Institute (DMI)"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://digitalmarketinginstitute.com/" target="_blank"
+                  >Digital Marketing Institute (DMI)</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  Digital Marketing Institute (DMI) l&agrave; tổ chức dẫn đầu
+                  thế giới về &ldquo;<strong>Digital Marketing</strong>&rdquo;.
+                  PACE l&agrave; đối t&aacute;c đặc quyền của DMI để triển khai
+                  c&aacute;c chương tr&igrave;nh đ&agrave;o tạo đẳng cấp thế
+                  giới của DMI tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner11"
+              >
+                <a href="https://www.efficientlearning.com/" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/Wiley/Wiley_Wordmark_black.png"
+                    alt="Wiley Efficient Learning"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://www.efficientlearning.com/" target="_blank"
+                  >Wiley Efficient Learning</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  Wiley Efficient Learning l&agrave; tổ chức dẫn đầu thế giới,
+                  chuy&ecirc;n đ&agrave;o tạo v&agrave; luyện thi c&aacute;c
+                  chứng chỉ quan trọng nhất về
+                  <strong>T&agrave;i ch&iacute;nh &amp; Kế to&aacute;n</strong>.
+                  PACE l&agrave; đối t&aacute;c ch&iacute;nh thức của Wiley để
+                  triển khai c&aacute;c chương tr&igrave;nh đ&agrave;o tạo
+                  v&agrave; luyện thi c&aacute;c chứng chỉ t&agrave;i
+                  ch&iacute;nh - kế to&aacute;n quốc tế tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row rounded-3 mb-2 bg-white border-light-blue shadow-pace d-flex p-4"
+          >
+            <div
+              class="py-lg-0 py-4 align-content-center align-items-center col-md-4 h-100 h-auto justify-content-center px-lg-4 border-sm-right-none border-end"
+            >
+              <div
+                class="d-flex justify-content-center overflow-hidden partner8"
+              >
+                <a href="https://www.hoganassessments.com/" target="_blank">
+                  <img
+                    src="https://www.pace.edu.vn/uploads/partners/HOGAN/hogan-logo.png"
+                    alt="Hogan Assessments"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-8 px-lg-4">
+              <div class="h5 text-uppercase text-pace-blue fw-bold">
+                <a href="https://www.hoganassessments.com/" target="_blank"
+                  >Hogan Assessments</a
+                >
+              </div>
+              <div
+                class="justify-content-center text-justify align-items-center overflow-hidden"
+              >
+                <p style="text-align: justify">
+                  Hogan Assessments l&agrave; tổ chức dẫn đầu thế giới về
+                  <strong>Đ&aacute;nh gi&aacute; Nh&acirc;n sự</strong> (Talent
+                  Assessments) nhằm mục đ&iacute;ch tuyển dụng nh&acirc;n sự
+                  v&agrave; ph&aacute;t triển t&agrave;i năng. PACE l&agrave;
+                  đối t&aacute;c đặc quyền của Hogan để triển khai c&aacute;c
+                  dịch vụ đ&aacute;nh gi&aacute; nh&acirc;n sự đẳng cấp thế giới
+                  của Hogan tại Việt Nam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // ĐỐI TÁC TOÀN CẦU -->
+
+    <div id="footer" class="py-5 bg-pace-darker-blue text-white footervi">
+      <div class="container px-3 px-md-0">
+        <div class="d-md-flex justify-content-md-between">
+          <div class="contact-info">
+            <div class="p-3 border mx-auto w-100">
+              <div class="place">
+                <p
+                  style="
+                    font-size: 14px !important;
+                    line-height: 28px;
+                    font-weight: bold !important;
+                    text-transform: uppercase;
+                  "
+                >
+                  <a
+                    href="https://consulting.pace.edu.vn/gioi-thieu"
+                    class="fw-bold text-white"
+                    >Học viện Quản lý PACE</a
+                  >
+                </p>
+
+                <hr class="bg-white" />
+              </div>
+              <div class="place">
+                <!-- <p class="fw-bold">Trụ sở chính</p> -->
+                <div>Tòa nhà PACE</div>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/5AuHSU6ayRRXPkmZ8"
+                    rel="nofollow"
+                    class="text-white"
+                  >
+                    195-197 Nguyễn Thái Bình, Quận 1, TP. HCM</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="place">
+                <!-- <p class="fw-bold">Trụ sở chính</p> -->
+                <div>Tòa nhà PACE</div>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/aFaX1C8YRb6xtimq7"
+                    rel="nofollow"
+                    class="text-white"
+                  >
+                    341 Nguyễn Trãi, Quận 1, TP. HCM</a
+                  >
+                </div>
+              </div>
+              <hr />
+
+              <div class="place">
+                <!-- <p class="fw-bold">Trụ sở chính</p> -->
+                <div>Tòa nhà PACE</div>
+                <div>
+                  <a
+                    href="javascript:void(0)"
+                    rel="nofollow"
+                    class="text-white"
+                  >
+                    181-183 Cô Giang, Quận 1, TP. HCM</a
+                  >
+                </div>
+              </div>
+              <hr />
+
+              <!-- <div class="place">
+                     
+                        <div> Tòa nhà PACE</div>
+                        <div><a href="javascript:void(0)"
+                                                                     rel="nofollow"
+                                                                     class="text-white"> 214/B7 Nguyễn Trãi, Quận 1, TP. HCM</a>
+                        </div>
+                       
+                    </div>
+                  
+                    
+                      
+                    <hr> -->
+              <div class="place">
+                <div>Văn phòng Hà Nội</div>
+                <div class="text-nowrap">
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/Bz9YCwgbc5ztxHL39"
+                    rel="nofollow"
+                    class="text-white"
+                    >Capital Tower (Lầu 14), 109 Trần Hưng Đạo</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="other-contacts mt-4">
+                <div>
+                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:02838370208" class="text-white"
+                    >(028) 3837.0208 (TPHCM)</a
+                  >
+                </div>
+                <div class="mb-2">
+                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:02436462828" class="text-white"
+                    >(024) 3646.2828 (Hà Nội)</a
+                  >
+                </div>
+                <div>
+                  <a href="mailto:contact@PACE.edu.vn" class="text-white">
+                    <i class="fas fa-envelope"></i> contact@PACE.edu.vn
+                  </a>
+                </div>
+                <div>
+                  <a href="https://consulting.pace.edu.vn" class="text-white">
+                    <i class="fas fa-globe"></i> www.PACE.edu.vn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pace-units mt-4 mt-md-0">
+            <div class="d-none d-md-none d-md-flex flex-wrap w-100">
+              <div class="col-first mb-3 pb-3 border-bottom border-white">
+                <p class="mb-0 fw-bold text-uppercase">
+                  8 TRƯỜNG TRỰC THUỘC PACE
+                </p>
+              </div>
+              <div class="col-second mb-3 pb-3 border-bottom border-white">
+                <p class="mb-0 fw-bold text-uppercase">
+                  8 ĐƠN VỊ THÀNH VIÊN CỦA PACE
+                </p>
+              </div>
+              <div class="col-third mb-3 pb-3 border-bottom border-white">
+                <p class="mb-0 fw-bold text-uppercase">
+                  5 tổ chức phi lợi nhuận
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex footer_initial flex-wrap w-100">
+              <div class="col-first">
+                <p
+                  class="d-block d-md-block mb-0 fw-bold text-uppercase pb-3 mb-3 border-bottom border-white"
+                >
+                  8 TRƯỜNG TRỰC THUỘC PACE
+                </p>
+                <ul class="ps-3">
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-doanh-nhan-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Doanh Nhân PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-nhan-su-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Nhân Sự PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-tai-chinh-ke-toan-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Tài Chính Kế Toán PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-marketing-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Marketing PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-ban-hang-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Bán Hàng PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-san-xuat-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Sản Xuất PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-chuoi-cung-ung-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Chuỗi Cung Ứng PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-du-an-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Dự Án PACE</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-second">
+                <p
+                  class="d-block d-md-block mb-0 fw-bold text-uppercase pb-3 mb-3 border-bottom border-white"
+                >
+                  8 ĐƠN VỊ THÀNH VIÊN CỦA PACE
+                </p>
+                <ul class="ps-3">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://franklincovey.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >FranklinCovey Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://blanchard.vn/vi/trang-chu"
+                      target="_blank"
+                      class="text-white"
+                      >Blanchard Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="#"
+                      target="_blank"
+                      class="text-white"
+                      >Balanced Scorecard Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://mlv.pace.edu.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >Mindful Leadership Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://talentassessments.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >Talent Assessments Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="#"
+                      target="_blank"
+                      class="text-white"
+                      >Tomorrow Leaders Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://consulting.pace.edu.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >PACE Consulting</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://pacebooks.pace.edu.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >PACE Books</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-third">
+                <p
+                  class="d-block d-md-block mb-0 fw-bold text-uppercase pb-3 mb-3 border-bottom border-white"
+                >
+                  5 tổ chức phi lợi nhuận
+                </p>
+                <ul class="ps-3">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://ipl.edu.vn/"
+                      target="_blank"
+                      title="IPL Scholarship - Học bổng “Lãnh đạo Khai phóng”"
+                      class="text-white"
+                    >
+                      IPL Scholarship - Học bổng <br />“Lãnh đạo Khai phóng”
+                      <br class="d-md-inline" />dành cho Doanh nhân trẻ
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://openedu.vn/"
+                      target="_blank"
+                      title="Cổng tri thức Khai Phóng Trực Tuyến OpenEdu"
+                      class="text-white"
+                    >
+                      Trường Khai phóng <br />Trực tuyến OpenEdu
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://ired.edu.vn/"
+                      target="_blank"
+                      title="Viện Giáo Dục IRED"
+                      class="text-white"
+                    >
+                      Viện Giáo Dục IRED
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://sachhay.org/"
+                      target="_blank"
+                      title="Giải thưởng Sách Hay"
+                      class="text-white"
+                    >
+                      Giải thưởng Sách Hay
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://plems.edu.vn/"
+                      target="_blank"
+                      title="PLEMS Education"
+                      class="text-white"
+                    >
+                      PLEMS Education
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p
+              class="mb-0 fw-bold text-uppercase mb-1 w-100 pt-3 border-top border-white mt-4 mt-md-3 dt_toancau"
+            >
+              8 ĐỐI TÁC TOÀN CẦU CỦA PACE
+            </p>
+
+            <div class="d-flex flex-wrap footer_initial w-100 eightdt">
+              <div class="col-first">
+                <ul class="ps-3 mb-0">
+                  <li class="global-partner-item col-first">
+                    <a
+                      rel="nofollow"
+                      href="https://www.franklincovey.com/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >FranklinCovey</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-first">
+                    <a
+                      rel="nofollow"
+                      href="https://www.blanchard.com"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >Blanchard</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-first">
+                    <a
+                      rel="nofollow"
+                      href="https://www.siyglobal.com/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >SIY Global</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-second">
+                <ul class="ps-3 mb-0">
+                  <li class="global-partner-item col-second">
+                    <a
+                      rel="nofollow"
+                      href="https://www.amanet.org/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >American Management Association (AMA)</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-second">
+                    <a
+                      rel="nofollow"
+                      href="https://shrm.org/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >Society for Human Resource Management (SHRM)</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-second">
+                    <a
+                      rel="nofollow"
+                      href="https://digitalmarketinginstitute.com/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >Digital Marketing Institute (DMI)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-third">
+                <ul class="">
+                  <li class="global-partner-item col-third">
+                    <a
+                      href="https://www.efficientlearning.com/"
+                      target="_blank"
+                      rel="nofollow"
+                      class="text-white"
+                      >Wiley Efficient Learning</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-third">
+                    <a
+                      href="https://www.hoganassessments.com/"
+                      target="_blank"
+                      rel="nofollow"
+                      class="text-white"
+                      >Hogan Assessments</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div id="copyright" class="py-5 bg-pace-darkest-blue text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-md-between">
+          <div
+            class="logo d-flex align-items-center justify-content-md-start justify-content-center w-sm-100 mb-4 mb-md-0"
+          >
+            <a
+              href="https://consulting.pace.edu.vn"
+              title="Học viện Quản lý PACE"
+            >
+              <img
+                src="https://www.pace.edu.vn/img/logo/logo-pace-white.png"
+                alt="Học viện Quản lý PACE"
+                style="max-height: 75px"
+              />
+            </a>
+          </div>
+          <div
+            class="social w-sm-100 mb-4 mb-md-0 d-flex d-md-inline justify-content-center"
+          >
+            <div class="">
+              <div
+                class="text-white d-flex justify-content-md-between align-items-stretch w-100 mb-3"
+              >
+                <div class="pe-5 d-flex align-items-center fw-bold">
+                  Kết nối với chúng tôi
+                </div>
+                <div class="d-flex justify-content-end gap-3">
+                  <a
+                    rel="nofollow"
+                    href="https://www.facebook.com/HocvienQuanlyPACE"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a
+                    rel="nofollow"
+                    href="https://www.youtube.com/c/H%E1%BB%8DcVi%E1%BB%87nQu%E1%BA%A3nL%C3%BDPACE"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    <i class="fab fa-youtube fa-2x"></i>
+                  </a>
+                  <a
+                    rel="nofollow"
+                    href="https://www.linkedin.com/company/pace-institute-of-management/"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="facebookEmbedContainer"
+                class="w-100"
+                style="height: 125px"
+              >
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHocvienQuanlyPACE&tabs=timeline&width=340&height=72&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=517007125758627"
+                  width="340"
+                  height="125"
+                  style="
+                    border: none;
+                    overflow: hidden;
+                    border: 1px solid #ffffff;
+                  "
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter w-sm-100 pb-5 pb-md-0">
+            <div
+              class="mb-3 align-items-center justify-content-center justify-content-md-start hide_tv"
+              style="height: 28px"
+            >
+              Đăng ký nhận tin tức mới nhất từ PACE
+            </div>
+            <div id="newsletterFaker" class="p-1 bg-white input-group hide_tv">
+              <input
+                type="text"
+                class="form-control border-0"
+                name="email"
+                placeholder="Email của bạn"
+              />
+              <button type="button" class="btn btn-warning rounded-start">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+            <div class="text-start text-md-end mt-5">
+              <a
+                href="/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                >Privacy</a
+              >
+              &copy; 2025 Học viện Quản lý PACE
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Đăng ký nhận tin tức mới nhất từ PACE
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="newsletterForm"
+              action="https://consulting.pace.edu.vn/ban-tin-tu-dong/dang-ky"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="_token"
+                value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+              />
+              <div
+                id="successMessage"
+                class="text-success text-center text-md-start mb-3 w-100"
+                style="display: none"
+              ></div>
+              <div
+                id="errorMessage"
+                class="text-danger text-center text-md-start mb-3 w-100"
+                style="display: none"
+              >
+                <ul></ul>
+              </div>
+              <div class="input-group">
+                <input
+                  type="hidden"
+                  name="newsletter_recaptcha_response"
+                  class="recaptcha_response"
+                  id="newsletter_recaptcha_response"
+                />
+
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="email"
+                  placeholder="Email của bạn"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-warning"
+                  data-sitekey="6LdQHUghAAAAANxn7wKnvi8x1H9cY2hQqOWrNSCK"
+                  data-callback="newsletterRegister"
+                >
+                  <i class="fas fa-paper-plane"></i> ĐĂNG KÝ
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.pace.edu.vn/js/bootstrap.bundle.min.js?id=2faceb2d3db75ced808545e78fab94ed"></script>
+    <script
+      type="text/javascript"
+      src="/js/bootstrap.bundle.min.js?id=2faceb2d3db75ced808545e78fab94ed"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pace.edu.vn/js/plugins/parallax.js/parallax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pace.edu.vn/js/plugins/owl/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pace.edu.vn/js/plugins/choices/js/choices.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/js/web.js?id=91bf0758b590c395ed5e2b046246eb05"
+    ></script>
+
+    <!-- Extra scripts -->
+    <script src="https://www.pace.edu.vn/js/plugins/hoverIntent/jquery.hoverIntent.min.js"></script>
+    <script src="https://www.pace.edu.vn/js/plugins/flip-box/jquery.flip.min.js"></script>
+    <script type="text/javascript">
+      function BeginValidate() {
+        if (
+          $(".email_valid").text() != "" ||
+          parseInt($("#size").val()) > 4000000 ||
+          $(".phone_valid").text() != ""
+        ) {
+          $('button[type="submit"]').attr("disabled", "disabled");
+        } else {
+          $('button[type="submit"]').removeAttr("disabled");
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        var emailText = $("input[name=email]").val();
+        var mobileText = $("input[name=mobile]").val();
+        $("body").on("keyup", "#email", function () {
+          if (validateEmail($(this).val()) == true) {
+            $('button[type="submit"]').removeAttr("disabled");
+            $(".email_valid").text("");
+            BeginValidate();
+          } else {
+            $('button[type="submit"]').attr("disabled", "disabled");
+            $(".email_valid").text("Vui lòng nhập dữ liệu");
+          }
+        });
+        $("body").on("keyup", "#mobile", function () {
+          if (validatePhone($(this).val()) == true) {
+            $('button[type="submit"]').removeAttr("disabled");
+            $(".mobile_valid").text("");
+            BeginValidate();
+          } else {
+            $('button[type="submit"]').attr("disabled", "disabled");
+            $(".mobile_valid").text("Vui lòng nhập dữ liệu");
+            BeginValidate();
+          }
+        });
+        function validateEmail(email) {
+          //Validates the email address
+          var emailRegex =
+            /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          return emailRegex.test(email);
+        }
+
+        function validatePhone(phone) {
+          //Validates the phone number
+          var phoneRegex = /^(\+91-|\+91|0)?\d{10}$/; // Change this regex based on requirement
+          return phoneRegex.test(phone);
+        }
+
+        $(".flip-horizontal")
+          .flip()
+          .hoverIntent(function () {
+            $(this).flip("toggle");
+          });
+
+        $(".fileBrowser").on("click", function () {
+          let $input = $(this).siblings("input[type=file]").trigger("click");
+          let $label = $(this).find(".label");
+          let $info = $(this).find(".info");
+
+          $input.on("change", function (e) {
+            let fileName = this.value.substr(this.value.lastIndexOf("\\") + 1);
+            if (
+              this.files[0].size > 4000000 ||
+              this.files[0].type != "application/pdf"
+            ) {
+              $('button[type="submit"]').attr("disabled", "disabled");
+              $("#size").val(this.files[0].size);
+            } else {
+              $('button[type="submit"]').removeAttr("disabled");
+              $("#size").val(this.files[0].size);
+            }
+            BeginValidate();
+            if (fileName != "") {
+              $label.text(fileName);
+              $info.hide();
+            }
+          });
+        });
+
+        let $job = $("#recruitmentItem");
+        if ($job.length)
+          $("html, body").animate({ scrollTop: $job.offset().top }, "fast");
+      });
+    </script>
+    <!-- End Extra scripts -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      function reloadCaptcha() {
+        $.ajax({
+          url: "/api/captcha/reload",
+          success: function success(response) {
+            $(".captchaImage", $(document))
+              .attr("src", response.captcha)
+              .trigger("change");
+          },
+        });
+      }
+
+      $(".reloadCaptchaButton").each(function () {
+        $(this).on("click", function () {
+          alert("Reload");
+          reloadCaptcha();
+        });
+      });
+      // start Newsletter
+      $(".btn-close").click(function () {
+        $("#newsletterModal").hide();
+        $(".modal").removeClass("in");
+        $(".modal").addClass("out");
+        $(".modal-backdrop").hide();
+        $("#newsletterFaker").show();
+      });
+      var myModalAlternative = new bootstrap.Modal($("#newsletterModal"));
+      $("#newsletterModal")
+        .on("show.bs.modal", function () {
+          $("#newsletterFaker").hide();
+          reloadCaptcha();
+        })
+        .on("hide.bs.modal", function () {
+          $("#newsletterFaker").show();
+        });
+      $("#newsletterFaker").on("click", function () {
+        myModalAlternative.show();
+      });
+      $("#newsletterForm").on("submit", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $submitButton = $("button[type=submit]", $(this));
+        var $errorContainer = $("#errorMessage", $(this));
+        var $successContainer = $("#successMessage", $(this));
+        $.ajax({
+          url: $(this).prop("action"),
+          type: $(this).prop("method"),
+          data: $(this).serialize(),
+          beforeSend: function beforeSend() {
+            $submitButton
+              .find(".fas")
+              .removeClass("fa-paper-plane")
+              .addClass("fa-spinner fa-spin");
+            console.log("BeforeSend");
+            createRecaptcha();
+          },
+          success: function success(response) {
+            // console.log(response);
+            console.log("success");
+
+            if (response.errors) {
+              $successContainer.empty().hide();
+              $errorContainer.find("ul").empty();
+              $.each(response.errors, function (key, val) {
+                $errorContainer.find("ul").append($("<li>").text(val[0]));
+                if ($errorContainer.css("display", "none"))
+                  $errorContainer.show();
+              });
+            } else {
+              $errorContainer.hide();
+              $successContainer.html(response.message);
+              if ($successContainer.css("display", "none"))
+                $successContainer.show();
+            }
+
+            $submitButton
+              .attr("disabled", false)
+              .find(".fas")
+              .removeClass("fa-spinner fa-spin")
+              .addClass("fa-paper-plane");
+          },
+        });
+        return false;
+      }); // end Newsletter
+      function createRecaptcha() {
+        grecaptcha
+          .execute("6LdtL4wkAAAAALjcYev4eJHpngQFe_tQTNOSH1al")
+          .then(function (token) {
+            var recaptchaResponses =
+              document.getElementsByClassName("recaptcha_response");
+            if (recaptchaResponses.length > 0) {
+              for (var i = 0; i < recaptchaResponses.length; i++) {
+                recaptchaResponses[i].value = token;
+              }
+            }
+          });
+      }
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TDH6NZ");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5f59ada64704467e89edac04/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <script>
+      var Tawk_API = Tawk_API || {};
+      Tawk_API.onOfflineSubmit = function (data) {
+        (async function () {
+          const url = "https://pcrm.pace.edu.vn/webhook/tawkto";
+          if (url === null) {
+            return;
+          }
+          const offlineData = {
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            questions: data.questions,
+            sign: "6cd827f79b8536d7cdcc82977395be8c3d74841dcddb0d62535c34511f3a9ecc",
+            client: "307e6294d96e833acd8aed2dcce5d2cc",
+            _token: $('meta[name="csrf-token"]').attr("content"),
+          };
+          try {
+            const response = await fetch(url, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(offlineData),
+            });
+          } catch (error) {
+            console.log("Error:", error);
+          }
+        })();
+      };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdtL4wkAAAAALjcYev4eJHpngQFe_tQTNOSH1al"></script>
+    <script>
+      grecaptcha.ready(function () {
+        grecaptcha
+          .execute("6LdtL4wkAAAAALjcYev4eJHpngQFe_tQTNOSH1al")
+          .then(function (token) {
+            var recaptchaResponses =
+              document.getElementsByClassName("recaptcha_response");
+            if (recaptchaResponses.length > 0) {
+              for (var i = 0; i < recaptchaResponses.length; i++) {
+                recaptchaResponses[i].value = token;
+              }
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}

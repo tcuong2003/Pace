@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>{% block title %}PACE{% endblock %}</title>
+    <style>
+      .header-buttons button {
+        margin-right: 10px;
+      }
+
+      .nav-item a:hover {
+        color: #007bff;
+        text-decoration: underline;
+      }
+
+      .navbar-brand img {
+        transition: transform 0.2s;
+      }
+
+      .navbar-brand img:hover {
+        transform: scale(1.1);
+      }
+
+      .flag-icon img {
+        cursor: pointer;
+        margin-left: 5px;
+      }
+
+      .flag-icon img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Add extra custom styling for the navbar and buttons */
+      .navbar {
+        box-shadow: 0px 4px 2px -2px gray;
+      }
+
+      .navbar-nav .nav-item {
+        margin-right: 15px;
+      }
+
+      .navbar-nav .nav-link {
+        font-weight: bold;
+      }
+
+      .btn {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'main:home' %}">
+          <img
+            alt="PACE Institute of Management Logo"
+            height="50"
+            src="https://www.pace.edu.vn/images/logo/Logo_web_PACE_Tet.svg"
+            width="150"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="{% url 'pace_training:pace_training_form' %}"
+                >PACE Training</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="{% url 'pace_consulting:pace_consulting_form' %}"
+                >PACE Consulting</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pace_books:pace_books_form' %}"
+                >PACE Books</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pace_npo:pace_npo_form' %}"
+                >PACE NPO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="{% url 'pace_seminar:pace_seminar_form' %}"
+                >PACE Seminar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'pace_hub:pace_hub_form' %}"
+                >PACE Hub</a
+              >
+            </li>
+          </ul>
+          <div class="header-buttons d-flex">
+            <a class="nav-link" href="{% url 'tuyen_dung:tuyen_dung_form' %}"
+              ><button class="btn btn-secondary">Tuyển dụng</button></a
+            >
+            <a class="nav-link" href="{% url 'lien_he:lien_he_form' %}"
+              ><button class="btn btn-secondary">Liên hệ</button></a
+            >
+            <a class="nav-link" href="#"
+              ><button class="btn btn-primary">Đăng nhập</button></a
+            >
+            <a class="nav-link" href="{% url 'gioi_thieu:gioi_thieu_form' %}"
+              ><button class="btn btn-outline-primary">Giới thiệu</button></a
+            >
+          </div>
+          <div class="flag-icon d-flex align-items-center ml-3">
+            <img
+              alt="Vietnam Flag"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/YXGFgG3d3MPo64OhYTOSPcZ9knqIZTXy97zOrjlh7tU.jpg"
+              width="30"
+            />
+            <img
+              alt="UK Flag"
+              height="20"
+              src="https://storage.googleapis.com/a1aa/image/iCUNudcfzDh6louTVHAqX60Hj5SGE-LGRySaIi1Pras.jpg"
+              width="30"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mt-4">{% block content %} {% endblock %}</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

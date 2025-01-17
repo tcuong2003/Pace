@@ -1,0 +1,1515 @@
+{% extends 'base.html' %} 
+{% block title %} PACE Training {% endblock %} 
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      rel="stylesheet"
+    />
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    -->
+    <link
+      href="https://www.pace.edu.vn/images/favicon.jpg"
+      rel="shortcut icon"
+    />
+    <meta
+      name="csrf-token"
+      content="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+    />
+
+    <title>Liên hệ PACE</title>
+    <meta
+      name="description"
+      content="Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+    />
+    <link rel="canonical" href="https://consulting.pace.edu.vn/lien-he" />
+    <meta name="robots" content="all" />
+    <meta property="og:title" content="Liên hệ PACE" />
+    <meta
+      property="og:description"
+      content="Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://consulting.pace.edu.vn/lien-he" />
+    <meta
+      property="og:image"
+      content="https://consulting.pace.edu.vn/img/pace-institute.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="Liên hệ PACE" />
+    <meta
+      name="twitter:description"
+      content="Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Liên hệ PACE",
+        "description": "Tiền thân của Học viện Quản lý PACE là “Trường Doanh Nhân PACE” - “trường doanh nhân” đầu tiên trong lịch sử kinh thương Việt Nam."
+      }
+    </script>
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="fb:app_id" content="1692611384370875" />
+    <meta
+      name="google-site-verification"
+      content="ZQAl9-ieYEY8imqZusYaIBZ3GBeClKl4bwOmn5aO8oA"
+    />
+    <meta name="geo.region" content="VN" />
+    <meta name="geo.placename" content="Ho Chi Minh" />
+    <meta name="geo.position" content="10.761453; 106.686157" />
+    <meta name="ICBM" content="10.761453, 106.686157" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Học viện Quản lý PACE",
+        "alternateName": "PACE",
+        "url": "https://www.pace.edu.vn"
+      }
+    </script>
+    <!-- Schema Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Học Viện Quản Lý PACE",
+        "image": "https://www.pace.edu.vn/uploads/banners/gioi-thieu-hoc-vien-quan-ly-pace.jpg",
+        "@id": "",
+        "url": "https://www.pace.edu.vn",
+        "telephone": "+8428 38370208",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "341 Nguyễn Trãi, Quận 1",
+          "addressLocality": "Hồ Chí Minh",
+          "postalCode": "70000",
+          "addressCountry": "VN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.761453,
+          "longitude": 106.686157
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "21:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/HocvienQuanlyPACE",
+          "https://www.linkedin.com/company/pace-institute-of-management/",
+          "https://www.youtube.com/c/H%E1%BB%8DcVi%E1%BB%87nQu%E1%BA%A3nL%C3%BDPACE"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Học Viện Quản Lý PACE",
+        "alternateName": "PACE Institute of Management",
+        "url": "https://www.pace.edu.vn/",
+        "logo": "https://www.pace.edu.vn/img/logo-pace-2021.svg",
+        "sameAs": [
+          "https://www.facebook.com/HocvienQuanlyPACE",
+          "https://www.linkedin.com/company/pace-institute-of-management/",
+          "https://www.youtube.com/c/H%E1%BB%8DcVi%E1%BB%87nQu%E1%BA%A3nL%C3%BDPACE"
+        ]
+      }
+    </script>
+    <link rel="alternate" href="https://www.pace.edu.vn/" hreflang="vi-vn" />
+    <link rel="alternate" href="https://www.pace.edu.vn/home" hreflang="en" />
+    <link
+      rel="alternate"
+      href="https://www.pace.edu.vn/"
+      hreflang="x-default"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Choices CSS -->
+    <link
+      rel="stylesheet"
+      href="/js/plugins/choices/css/choices.min.css?id=5c65c469543e1c2dfb0046db039d2ae2"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      href="https://www.pace.edu.vn/js/plugins/owl/assets/owl.carousel.min.css"
+      rel="stylesheet"
+      media="screen"
+    />
+
+    <style rel="stylesheet">
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev {
+        border: none;
+        padding: 0 !important;
+        position: absolute;
+        bottom: 0;
+        background: 0 0;
+        color: inherit;
+        font: inherit;
+        height: 47px;
+        width: 26px;
+        cursor: pointer;
+        top: 50px !important;
+      }
+
+      .owl-carousel .owl-prev {
+        left: -53px;
+      }
+
+      .owl-carousel .owl-next {
+        right: -43px;
+      }
+
+      .owl-carousel .owl-nav button.owl-next span,
+      .owl-carousel .owl-nav button.owl-prev span {
+        font-size: 4rem;
+        color: #8c8c8c;
+      }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="/css/app.css?id=e1aba339773a612355fc97b2e9f56361"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      href="/css/web.css?id=ec2065443cc2874e00d8da29217867b9"
+      rel="stylesheet"
+      media="screen"
+    />
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js?id=8fb8fee4fcc3cc86ff6c724154c49c42"></script>
+    <script>
+      $.ajaxSetup({
+        headers: {
+          "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+        },
+      });
+
+      let uri = window.location.href
+        .replace("https://", "")
+        .replace("http://", "")
+        .replace(window.location.host, "")
+        .replace(window.location.hash, "");
+
+      if (
+        (uri == "/dao-tao" || uri == "dao-tao") &&
+        window.location.hash.replace("#", "").startsWith("truong-")
+      ) {
+        window.location.href =
+          "https://" +
+          window.location.host +
+          "/" +
+          window.location.hash.replace("#", "");
+      }
+    </script>
+
+    <!-- EXTRA CSS -->
+    <style rel="stylesheet">
+      .content-contact-info {
+        border: solid 1px #a1e6ff;
+        padding: 1.5rem;
+      }
+    </style>
+    <!-- End EXTRA CSS -->
+
+    <link
+      href="/css/responsive.css?id=4e1803052f5e63be23dce0c644419c3e"
+      rel="stylesheet"
+      media="screen"
+    />
+  </head>
+  <body class="web-contact-pace-create">
+    <!-- BANNER -->
+    <section id="slideBanner">
+      <div>
+        <div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a
+                href="https://www.pace.edu.vn/tai-lieu/chi-tiet-ve-pace"
+                title="HÀNH TRÌNH 2 THẬP KỶ KHAI MỞ NỀN QUẢN TRỊ MỚI TẠI VIỆT NAM"
+                target="_blank"
+              >
+                <img
+                  src="https://www.pace.edu.vn/uploads/banners/banner_09_2024/banner-pace-300824.webp"
+                  alt="HÀNH TRÌNH 2 THẬP KỶ KHAI MỞ NỀN QUẢN TRỊ MỚI TẠI VIỆT NAM"
+                  class="w-100 d-lg-block d-md-none d-none"
+                  style="aspect-ratio: 4.27/1"
+                />
+                <img
+                  src="https://www.pace.edu.vn/uploads/banners/banner_09_2024/WebPACE_mobile.webp"
+                  alt="HÀNH TRÌNH 2 THẬP KỶ KHAI MỞ NỀN QUẢN TRỊ MỚI TẠI VIỆT NAM"
+                  class="d-lg-none d-md-block w-100"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://www.pace.edu.vn/tai-lieu/chi-tiet-ve-pace"
+                title="Hệ sinh thái quản trị toàn cầu của PACE"
+                target="_blank"
+              >
+                <img
+                  src="https://www.pace.edu.vn/uploads/banners/banner_09_2024/banner-hoc-vien-quan-ly-pace.webp"
+                  alt="Hệ sinh thái quản trị toàn cầu của PACE"
+                  class="w-100 d-lg-block d-md-none d-none"
+                  style="aspect-ratio: 4.27/1"
+                />
+                <img
+                  src="https://www.pace.edu.vn/uploads/banners/banner_09_2024/WebPACE_TC_mobile.webp"
+                  alt="Hệ sinh thái quản trị toàn cầu của PACE"
+                  class="d-lg-none d-md-block w-100"
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#bannerSlider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Trước</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#bannerSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sau</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- // BANNER -->
+
+    <!-- MAIN CONTENT -->
+    <section class="bg-white pt-3 pb-5">
+      <div class="container">
+        <!-- BREADCRUMB -->
+        <div class="my-4">
+          <ul class="breadcrumb pb-4 border-bottom border-dark">
+            <li class="breadcrumb-item">
+              <a href="https://consulting.pace.edu.vn/trang-chu">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+          </ul>
+        </div>
+        <!-- // BREADCRUMB -->
+
+        <div class="row mt-5">
+          <!-- LEFT CONTENT -->
+          <h1 class="h1 fw-bold text-roboto-slab text-pace-blue">
+            Kết nối ngay với PACE để được hỗ trợ nhanh nhất
+          </h1>
+          <hr
+            class="my-4 opacity-100"
+            style="height: 10px; width: 80px; background-color: #efb920"
+          />
+          <h5 class="mb-4 fw-bold">Thông tin liên hệ</h5>
+
+          <div class="col-lg-8 pe-md-5">
+            <form
+              action="https://consulting.pace.edu.vn/lien-he-pace"
+              method="post"
+              class="needs-validation invalid-scrollable"
+              novalidate
+            >
+              <input
+                type="hidden"
+                name="_token"
+                value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+              />
+              <!-- <div style="display: none" aria-hidden="true">
+    <input type="text" name="Honeypot_response[p7TatCrt5qIikEL8N]" value="" autocomplete="off" tabindex="-1" maxlength="100">
+    <input type="text" name="Honeypot_response[tj5rVy7DWwzJjawRP]" value="eyJpdiI6Imt3OHpoYnduMXh1M3ptNEQ4bkFad2c9PSIsInZhbHVlIjoiYXpyci9GZmY1R0s1cTh1TjNRdHg2QT09IiwibWFjIjoiNTk0ZTgzZTQ4N2U5MmQyMTI0YWI4YzNjMzQzMDRlMWYwNDlkM2M3YzZlNDcxNjIyYTJiNTg5NGRlOWE4MTU2ZCIsInRhZyI6IiJ9" autocomplete="off" tabindex="-1">
+</div>
+ -->
+              <div class="row mb-3">
+                <label class="col-form-label col-md-2" for="fullName"
+                  >Họ và tên <span class="text-danger">*</span></label
+                >
+                <div class="col-md-10">
+                  <input
+                    type="text"
+                    class="form-control text-capitalize"
+                    id="fullName"
+                    name="full_name"
+                    placeholder="Họ tên người liên hệ"
+                    value=""
+                    required
+                    autofocus
+                  />
+                  <div class="invalid-feedback">* Vui lòng nhập dữ liệu</div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-form-label col-md-2" for="fullName"
+                  >Danh xưng <span class="text-danger">*</span></label
+                >
+                <div class="col-md-10">
+                  <div class="d-flex align-items-center h-100">
+                    <div
+                      class="form-check form-check-inline"
+                      style="padding: 0"
+                    >
+                      <input
+                        type="radio"
+                        required
+                        value="0"
+                        id="gender0"
+                        name="gender"
+                      />
+                      <label
+                        class="form-check-label"
+                        style="margin: 0 5px"
+                        for="gender0"
+                        >Chị</label
+                      >
+
+                      <input
+                        type="radio"
+                        required
+                        value="1"
+                        id="gender1"
+                        name="gender"
+                      />
+                      <label
+                        class="form-check-label"
+                        style="margin: 0 5px"
+                        for="gender1"
+                        >Anh</label
+                      >
+
+                      <div class="invalid-feedback">
+                        * Vui lòng nhập dữ liệu
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-form-label col-md-2" for="email"
+                  >Email <span class="text-danger">*</span></label
+                >
+                <div class="col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email liên hệ"
+                    required
+                    value=""
+                  />
+                  <div class="invalid-feedback">* Vui lòng nhập dữ liệu</div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-form-label col-md-2" for="phone"
+                  >Số điện thoại <span class="text-danger">*</span></label
+                >
+                <div class="col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Số điện thoại liên hệ"
+                    required
+                    value=""
+                  />
+                  <div class="invalid-feedback">* Vui lòng nhập dữ liệu</div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-form-label col-md-2" for="phone"
+                  >Chức danh</label
+                >
+                <div class="col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="position"
+                    name="position"
+                    placeholder="Chức danh"
+                    value=""
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-form-label col-md-2 text-nowrap" for="phone"
+                  >Nội dung liên hệ <span class="text-danger">*</span></label
+                >
+                <div class="col-md-10">
+                  <textarea
+                    name="contact_message"
+                    required
+                    class="form-control"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Nội dung liên hệ"
+                  ></textarea>
+                  <div class="invalid-feedback">* Vui lòng nhập dữ liệu</div>
+                  <p class="text-muted mt-2">
+                    <i class="fas fa-info-circle"></i> Tối đa 500 kí tự
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label
+                  class="col-form-label col-md-2 text-nowrap"
+                  for="phone"
+                ></label>
+                <div class="col-md-10">
+                  <div class="Privacy">
+                    <input
+                      type="checkbox"
+                      required
+                      name="Privacy"
+                      id="Privacy"
+                    />
+                    <label
+                      class="form-check-label"
+                      style="margin: 0 5px"
+                      for="Privacy"
+                      >Tôi đã đọc, hiểu và đồng ý cho phép Học Viện PACE thu
+                      thập, sử dụng và xử lý dữ liệu cá nhân của tôi / chúng tôi
+                      theo các quy định và đồng ý với các nội dung của
+                      <a
+                        href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                        target="_blank"
+                        >Chính sách Bảo mật dữ liệu của PACE</a
+                      >.</label
+                    ><br />
+                    <div class="invalid-feedback" for="Privacy">
+                      <i class="fas fa-info-circle"></i> Vui lòng đọc &amp; chấp
+                      nhận chính sách bảo mật dữ liệu của PACE
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100">
+                <button type="submit" class="btn btn-pace-lighter-blue w-100">
+                  Gửi nội dung liên hệ
+                </button>
+                <input
+                  type="hidden"
+                  name="recaptcha_response"
+                  class="recaptcha_response"
+                  id="recaptcha_response"
+                />
+              </div>
+              <div
+                class="text-sm mb-3"
+                style="margin-top: 15px; font-size: 15px; text-align: justify"
+              >
+                Trang web này được bảo vệ bởi reCAPTCHA và áp dụng
+                <a
+                  href="https://policies.google.com/privacy"
+                  class="text-[#0057c8]"
+                  target="_blank"
+                  >Chính sách quyền riêng tư</a
+                >
+                cũng như
+                <a
+                  href="https://policies.google.com/terms"
+                  class="text-[#0057c8]"
+                  target="_blank"
+                  >Điều khoản dịch vụ</a
+                >
+                của Google. Thông tin bạn chia sẻ với chúng tôi sẽ được sử dụng
+                theo
+                <a
+                  href="https://www.pace.edu.vn/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                  class="text-[#0057c8]"
+                  target="_blank"
+                  >Chính sách Bảo mật dữ liệu của PACE</a
+                >.
+              </div>
+            </form>
+          </div>
+          <!-- // LEFT CONTENT -->
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-4">
+            <!-- <div id="invoiceBox" class="rounded px-4 py-5 bg-pace-darker-blue mt-3 mt-md-0">
+                        <h5 class="text-uppercase text-center mb-4 text-white">Tải hóa đơn điện tử</h5>
+                        <form id="eVoiceForm" action="https://consulting.pace.edu.vn/tra-cuu-hoa-don?type=vnpt" method="get" class="needs-validation" novalidate>
+                            <div class="p-1 bg-white input-group has-validation">
+                                <input type="text" name="code" class="form-control border-0" style="font-size: 0.85rem" placeholder="Mã tra cứu hóa đơn" required>
+                                <button type="submit" class="btn btn-warning rounded-start text-uppercase">
+                                    Tra cứu                                </button>
+                                <div class="invalid-feedback">
+                                    <i class="fas fa-info-circle"></i> Vui lòng nhập
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+
+            <div class="content-contact-info rounded mt-0">
+              <div class="h6 text-uppercase fw-bold text-pace-blue">
+                Học viện Quản lý PACE
+              </div>
+              <hr class="opacity-100" style="background-color: #7996a6" />
+              <div class="place" style="font-size: 15px; line-height: 26px">
+                <div class="fw-bold">Tòa nhà PACE</div>
+                <div>195-197 Nguyễn Thái Bình, Quận 1, TP. HCM</div>
+                <!--  <div>TP Hồ Chí Minh, Việt Nam</div> -->
+                <div>(028) 3837.0208</div>
+              </div>
+              <hr class="opacity-100" style="background-color: #7996a6" />
+              <div class="place" style="font-size: 15px; line-height: 26px">
+                <div class="fw-bold">Văn phòng Hà Nội</div>
+                <div>Capital Tower (Lầu 14), 109 Trần Hưng Đạo</div>
+                <div>(024) 3646.2828</div>
+              </div>
+              <hr class="opacity-100" style="background-color: #7996a6" />
+              <div class="d-flex align-items-start flex-column gap-2">
+                <a href="mailto:contact@PACE.edu.vn">
+                  <i class="fas fa-envelope"></i> contact@PACE.edu.vn
+                </a>
+                <a href="https://consulting.pace.edu.vn/trang-chu">
+                  <i class="fas fa-globe"></i> www.PACE.edu.vn
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- // RIGHT CONTENT -->
+        </div>
+      </div>
+    </section>
+    <!-- // MAIN CONTENT -->
+
+    <!-- MAP -->
+    <section id="map" class="d-flex justify-content-between gap-0">
+      <div class="map-container w-100" style="">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6498819278863!2d106.6839837147875!3d10.761443462412766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752feecd435b85%3A0x4349600d5097bfe2!2zSOG7jWMgdmnhu4duIFF14bqjbiBsw70gUEFDRQ!5e0!3m2!1sen!2s!4v1572595618295!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+      <div class="photo-container">
+        <img
+          src="https://www.pace.edu.vn/img/pace-building.jpg"
+          class="img-fluid"
+          style="aspect-ratio: 1/1.3; max-height: 700px"
+        />
+      </div>
+    </section>
+    <!-- // MAP -->
+
+    <div id="footer" class="py-5 bg-pace-darker-blue text-white footervi">
+      <div class="container px-3 px-md-0">
+        <div class="d-md-flex justify-content-md-between">
+          <div class="contact-info">
+            <div class="p-3 border mx-auto w-100">
+              <div class="place">
+                <p
+                  style="
+                    font-size: 14px !important;
+                    line-height: 28px;
+                    font-weight: bold !important;
+                    text-transform: uppercase;
+                  "
+                >
+                  <a
+                    href="https://consulting.pace.edu.vn/gioi-thieu"
+                    class="fw-bold text-white"
+                    >Học viện Quản lý PACE</a
+                  >
+                </p>
+
+                <hr class="bg-white" />
+              </div>
+              <div class="place">
+                <!-- <p class="fw-bold">Trụ sở chính</p> -->
+                <div>Tòa nhà PACE</div>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/5AuHSU6ayRRXPkmZ8"
+                    rel="nofollow"
+                    class="text-white"
+                  >
+                    195-197 Nguyễn Thái Bình, Quận 1, TP. HCM</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="place">
+                <!-- <p class="fw-bold">Trụ sở chính</p> -->
+                <div>Tòa nhà PACE</div>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/aFaX1C8YRb6xtimq7"
+                    rel="nofollow"
+                    class="text-white"
+                  >
+                    341 Nguyễn Trãi, Quận 1, TP. HCM</a
+                  >
+                </div>
+              </div>
+              <hr />
+
+              <div class="place">
+                <!-- <p class="fw-bold">Trụ sở chính</p> -->
+                <div>Tòa nhà PACE</div>
+                <div>
+                  <a
+                    href="javascript:void(0)"
+                    rel="nofollow"
+                    class="text-white"
+                  >
+                    181-183 Cô Giang, Quận 1, TP. HCM</a
+                  >
+                </div>
+              </div>
+              <hr />
+
+              <!-- <div class="place">
+                     
+                        <div> Tòa nhà PACE</div>
+                        <div><a href="javascript:void(0)"
+                                                                     rel="nofollow"
+                                                                     class="text-white"> 214/B7 Nguyễn Trãi, Quận 1, TP. HCM</a>
+                        </div>
+                       
+                    </div>
+                  
+                    
+                      
+                    <hr> -->
+              <div class="place">
+                <div>Văn phòng Hà Nội</div>
+                <div class="text-nowrap">
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/Bz9YCwgbc5ztxHL39"
+                    rel="nofollow"
+                    class="text-white"
+                    >Capital Tower (Lầu 14), 109 Trần Hưng Đạo</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="other-contacts mt-4">
+                <div>
+                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:02838370208" class="text-white"
+                    >(028) 3837.0208 (TPHCM)</a
+                  >
+                </div>
+                <div class="mb-2">
+                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:02436462828" class="text-white"
+                    >(024) 3646.2828 (Hà Nội)</a
+                  >
+                </div>
+                <div>
+                  <a href="mailto:contact@PACE.edu.vn" class="text-white">
+                    <i class="fas fa-envelope"></i> contact@PACE.edu.vn
+                  </a>
+                </div>
+                <div>
+                  <a href="https://consulting.pace.edu.vn" class="text-white">
+                    <i class="fas fa-globe"></i> www.PACE.edu.vn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pace-units mt-4 mt-md-0">
+            <div class="d-none d-md-none d-md-flex flex-wrap w-100">
+              <div class="col-first mb-3 pb-3 border-bottom border-white">
+                <p class="mb-0 fw-bold text-uppercase">
+                  8 TRƯỜNG TRỰC THUỘC PACE
+                </p>
+              </div>
+              <div class="col-second mb-3 pb-3 border-bottom border-white">
+                <p class="mb-0 fw-bold text-uppercase">
+                  8 ĐƠN VỊ THÀNH VIÊN CỦA PACE
+                </p>
+              </div>
+              <div class="col-third mb-3 pb-3 border-bottom border-white">
+                <p class="mb-0 fw-bold text-uppercase">
+                  5 tổ chức phi lợi nhuận
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex footer_initial flex-wrap w-100">
+              <div class="col-first">
+                <p
+                  class="d-block d-md-block mb-0 fw-bold text-uppercase pb-3 mb-3 border-bottom border-white"
+                >
+                  8 TRƯỜNG TRỰC THUỘC PACE
+                </p>
+                <ul class="ps-3">
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-doanh-nhan-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Doanh Nhân PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-nhan-su-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Nhân Sự PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-tai-chinh-ke-toan-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Tài Chính Kế Toán PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-marketing-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Marketing PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-ban-hang-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Bán Hàng PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-san-xuat-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Sản Xuất PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-chuoi-cung-ung-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Chuỗi Cung Ứng PACE</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pace.edu.vn/truong-quan-tri-du-an-pace"
+                      target="_blank"
+                      class="text-white"
+                      >Trường Quản Trị Dự Án PACE</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-second">
+                <p
+                  class="d-block d-md-block mb-0 fw-bold text-uppercase pb-3 mb-3 border-bottom border-white"
+                >
+                  8 ĐƠN VỊ THÀNH VIÊN CỦA PACE
+                </p>
+                <ul class="ps-3">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://franklincovey.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >FranklinCovey Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://blanchard.vn/vi/trang-chu"
+                      target="_blank"
+                      class="text-white"
+                      >Blanchard Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="#"
+                      target="_blank"
+                      class="text-white"
+                      >Balanced Scorecard Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://mlv.pace.edu.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >Mindful Leadership Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://talentassessments.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >Talent Assessments Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="#"
+                      target="_blank"
+                      class="text-white"
+                      >Tomorrow Leaders Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://consulting.pace.edu.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >PACE Consulting</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://pacebooks.pace.edu.vn/"
+                      target="_blank"
+                      class="text-white"
+                      >PACE Books</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-third">
+                <p
+                  class="d-block d-md-block mb-0 fw-bold text-uppercase pb-3 mb-3 border-bottom border-white"
+                >
+                  5 tổ chức phi lợi nhuận
+                </p>
+                <ul class="ps-3">
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://ipl.edu.vn/"
+                      target="_blank"
+                      title="IPL Scholarship - Học bổng “Lãnh đạo Khai phóng”"
+                      class="text-white"
+                    >
+                      IPL Scholarship - Học bổng <br />“Lãnh đạo Khai phóng”
+                      <br class="d-md-inline" />dành cho Doanh nhân trẻ
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://openedu.vn/"
+                      target="_blank"
+                      title="Cổng tri thức Khai Phóng Trực Tuyến OpenEdu"
+                      class="text-white"
+                    >
+                      Trường Khai phóng <br />Trực tuyến OpenEdu
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://ired.edu.vn/"
+                      target="_blank"
+                      title="Viện Giáo Dục IRED"
+                      class="text-white"
+                    >
+                      Viện Giáo Dục IRED
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://sachhay.org/"
+                      target="_blank"
+                      title="Giải thưởng Sách Hay"
+                      class="text-white"
+                    >
+                      Giải thưởng Sách Hay
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      rel="nofollow"
+                      href="https://plems.edu.vn/"
+                      target="_blank"
+                      title="PLEMS Education"
+                      class="text-white"
+                    >
+                      PLEMS Education
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p
+              class="mb-0 fw-bold text-uppercase mb-1 w-100 pt-3 border-top border-white mt-4 mt-md-3 dt_toancau"
+            >
+              8 ĐỐI TÁC TOÀN CẦU CỦA PACE
+            </p>
+
+            <div class="d-flex flex-wrap footer_initial w-100 eightdt">
+              <div class="col-first">
+                <ul class="ps-3 mb-0">
+                  <li class="global-partner-item col-first">
+                    <a
+                      rel="nofollow"
+                      href="https://www.franklincovey.com/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >FranklinCovey</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-first">
+                    <a
+                      rel="nofollow"
+                      href="https://www.blanchard.com"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >Blanchard</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-first">
+                    <a
+                      rel="nofollow"
+                      href="https://www.siyglobal.com/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >SIY Global</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-second">
+                <ul class="ps-3 mb-0">
+                  <li class="global-partner-item col-second">
+                    <a
+                      rel="nofollow"
+                      href="https://www.amanet.org/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >American Management Association (AMA)</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-second">
+                    <a
+                      rel="nofollow"
+                      href="https://shrm.org/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >Society for Human Resource Management (SHRM)</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-second">
+                    <a
+                      rel="nofollow"
+                      href="https://digitalmarketinginstitute.com/"
+                      target="_blank"
+                      class="text-white text-nowrap"
+                      >Digital Marketing Institute (DMI)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-third">
+                <ul class="">
+                  <li class="global-partner-item col-third">
+                    <a
+                      href="https://www.efficientlearning.com/"
+                      target="_blank"
+                      rel="nofollow"
+                      class="text-white"
+                      >Wiley Efficient Learning</a
+                    >
+                  </li>
+                  <li class="global-partner-item col-third">
+                    <a
+                      href="https://www.hoganassessments.com/"
+                      target="_blank"
+                      rel="nofollow"
+                      class="text-white"
+                      >Hogan Assessments</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div id="copyright" class="py-5 bg-pace-darkest-blue text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-md-between">
+          <div
+            class="logo d-flex align-items-center justify-content-md-start justify-content-center w-sm-100 mb-4 mb-md-0"
+          >
+            <a
+              href="https://consulting.pace.edu.vn"
+              title="Học viện Quản lý PACE"
+            >
+              <img
+                src="https://www.pace.edu.vn/img/logo/logo-pace-white.png"
+                alt="Học viện Quản lý PACE"
+                style="max-height: 75px"
+              />
+            </a>
+          </div>
+          <div
+            class="social w-sm-100 mb-4 mb-md-0 d-flex d-md-inline justify-content-center"
+          >
+            <div class="">
+              <div
+                class="text-white d-flex justify-content-md-between align-items-stretch w-100 mb-3"
+              >
+                <div class="pe-5 d-flex align-items-center fw-bold">
+                  Kết nối với chúng tôi
+                </div>
+                <div class="d-flex justify-content-end gap-3">
+                  <a
+                    rel="nofollow"
+                    href="https://www.facebook.com/HocvienQuanlyPACE"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a
+                    rel="nofollow"
+                    href="https://www.youtube.com/c/H%E1%BB%8DcVi%E1%BB%87nQu%E1%BA%A3nL%C3%BDPACE"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    <i class="fab fa-youtube fa-2x"></i>
+                  </a>
+                  <a
+                    rel="nofollow"
+                    href="https://www.linkedin.com/company/pace-institute-of-management/"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="facebookEmbedContainer"
+                class="w-100"
+                style="height: 125px"
+              >
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHocvienQuanlyPACE&tabs=timeline&width=340&height=72&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=517007125758627"
+                  width="340"
+                  height="125"
+                  style="
+                    border: none;
+                    overflow: hidden;
+                    border: 1px solid #ffffff;
+                  "
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter w-sm-100 pb-5 pb-md-0">
+            <div
+              class="mb-3 align-items-center justify-content-center justify-content-md-start hide_tv"
+              style="height: 28px"
+            >
+              Đăng ký nhận tin tức mới nhất từ PACE
+            </div>
+            <div id="newsletterFaker" class="p-1 bg-white input-group hide_tv">
+              <input
+                type="text"
+                class="form-control border-0"
+                name="email"
+                placeholder="Email của bạn"
+              />
+              <button type="button" class="btn btn-warning rounded-start">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+            <div class="text-start text-md-end mt-5">
+              <a
+                href="/tin-kho-tri-thuc/chinh-sach-bao-ve-du-lieu-ca-nhan-cua-pace"
+                >Privacy</a
+              >
+              &copy; 2025 Học viện Quản lý PACE
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Đăng ký nhận tin tức mới nhất từ PACE
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="newsletterForm"
+              action="https://consulting.pace.edu.vn/ban-tin-tu-dong/dang-ky"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="_token"
+                value="DZALloyOCSnJcX0kUggxPoEB6pa2IUENIefE3Ds3"
+              />
+              <div
+                id="successMessage"
+                class="text-success text-center text-md-start mb-3 w-100"
+                style="display: none"
+              ></div>
+              <div
+                id="errorMessage"
+                class="text-danger text-center text-md-start mb-3 w-100"
+                style="display: none"
+              >
+                <ul></ul>
+              </div>
+              <div class="input-group">
+                <input
+                  type="hidden"
+                  name="newsletter_recaptcha_response"
+                  class="recaptcha_response"
+                  id="newsletter_recaptcha_response"
+                />
+
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="email"
+                  placeholder="Email của bạn"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-warning"
+                  data-sitekey="6LdQHUghAAAAANxn7wKnvi8x1H9cY2hQqOWrNSCK"
+                  data-callback="newsletterRegister"
+                >
+                  <i class="fas fa-paper-plane"></i> ĐĂNG KÝ
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.pace.edu.vn/js/bootstrap.bundle.min.js?id=2faceb2d3db75ced808545e78fab94ed"></script>
+    <script
+      type="text/javascript"
+      src="/js/bootstrap.bundle.min.js?id=2faceb2d3db75ced808545e78fab94ed"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pace.edu.vn/js/plugins/parallax.js/parallax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pace.edu.vn/js/plugins/owl/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.pace.edu.vn/js/plugins/choices/js/choices.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/js/web.js?id=91bf0758b590c395ed5e2b046246eb05"
+    ></script>
+
+    <!-- Extra scripts -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#reloadCaptchaButton").on("click", function () {
+          $.ajax({
+            url: "https://consulting.pace.edu.vn/api/captcha/reload",
+            success: function (response) {
+              $("#captchaImage")
+                .attr("src", response.captcha)
+                .trigger("change");
+            },
+          });
+        });
+      });
+    </script>
+    <!-- End Extra scripts -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      function reloadCaptcha() {
+        $.ajax({
+          url: "/api/captcha/reload",
+          success: function success(response) {
+            $(".captchaImage", $(document))
+              .attr("src", response.captcha)
+              .trigger("change");
+          },
+        });
+      }
+
+      $(".reloadCaptchaButton").each(function () {
+        $(this).on("click", function () {
+          alert("Reload");
+          reloadCaptcha();
+        });
+      });
+      // start Newsletter
+      $(".btn-close").click(function () {
+        $("#newsletterModal").hide();
+        $(".modal").removeClass("in");
+        $(".modal").addClass("out");
+        $(".modal-backdrop").hide();
+        $("#newsletterFaker").show();
+      });
+      var myModalAlternative = new bootstrap.Modal($("#newsletterModal"));
+      $("#newsletterModal")
+        .on("show.bs.modal", function () {
+          $("#newsletterFaker").hide();
+          reloadCaptcha();
+        })
+        .on("hide.bs.modal", function () {
+          $("#newsletterFaker").show();
+        });
+      $("#newsletterFaker").on("click", function () {
+        myModalAlternative.show();
+      });
+      $("#newsletterForm").on("submit", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $submitButton = $("button[type=submit]", $(this));
+        var $errorContainer = $("#errorMessage", $(this));
+        var $successContainer = $("#successMessage", $(this));
+        $.ajax({
+          url: $(this).prop("action"),
+          type: $(this).prop("method"),
+          data: $(this).serialize(),
+          beforeSend: function beforeSend() {
+            $submitButton
+              .find(".fas")
+              .removeClass("fa-paper-plane")
+              .addClass("fa-spinner fa-spin");
+            console.log("BeforeSend");
+            createRecaptcha();
+          },
+          success: function success(response) {
+            // console.log(response);
+            console.log("success");
+
+            if (response.errors) {
+              $successContainer.empty().hide();
+              $errorContainer.find("ul").empty();
+              $.each(response.errors, function (key, val) {
+                $errorContainer.find("ul").append($("<li>").text(val[0]));
+                if ($errorContainer.css("display", "none"))
+                  $errorContainer.show();
+              });
+            } else {
+              $errorContainer.hide();
+              $successContainer.html(response.message);
+              if ($successContainer.css("display", "none"))
+                $successContainer.show();
+            }
+
+            $submitButton
+              .attr("disabled", false)
+              .find(".fas")
+              .removeClass("fa-spinner fa-spin")
+              .addClass("fa-paper-plane");
+          },
+        });
+        return false;
+      }); // end Newsletter
+      function createRecaptcha() {
+        grecaptcha
+          .execute("6LdtL4wkAAAAALjcYev4eJHpngQFe_tQTNOSH1al")
+          .then(function (token) {
+            var recaptchaResponses =
+              document.getElementsByClassName("recaptcha_response");
+            if (recaptchaResponses.length > 0) {
+              for (var i = 0; i < recaptchaResponses.length; i++) {
+                recaptchaResponses[i].value = token;
+              }
+            }
+          });
+      }
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TDH6NZ");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5f59ada64704467e89edac04/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <script>
+      var Tawk_API = Tawk_API || {};
+      Tawk_API.onOfflineSubmit = function (data) {
+        (async function () {
+          const url = "https://pcrm.pace.edu.vn/webhook/tawkto";
+          if (url === null) {
+            return;
+          }
+          const offlineData = {
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            questions: data.questions,
+            sign: "6cd827f79b8536d7cdcc82977395be8c3d74841dcddb0d62535c34511f3a9ecc",
+            client: "307e6294d96e833acd8aed2dcce5d2cc",
+            _token: $('meta[name="csrf-token"]').attr("content"),
+          };
+          try {
+            const response = await fetch(url, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(offlineData),
+            });
+          } catch (error) {
+            console.log("Error:", error);
+          }
+        })();
+      };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdtL4wkAAAAALjcYev4eJHpngQFe_tQTNOSH1al"></script>
+    <script>
+      grecaptcha.ready(function () {
+        grecaptcha
+          .execute("6LdtL4wkAAAAALjcYev4eJHpngQFe_tQTNOSH1al")
+          .then(function (token) {
+            var recaptchaResponses =
+              document.getElementsByClassName("recaptcha_response");
+            if (recaptchaResponses.length > 0) {
+              for (var i = 0; i < recaptchaResponses.length; i++) {
+                recaptchaResponses[i].value = token;
+              }
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}
